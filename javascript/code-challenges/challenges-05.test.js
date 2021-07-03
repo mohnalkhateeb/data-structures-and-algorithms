@@ -136,12 +136,11 @@ let starWarsData = [{
 const returnNames = (arr) => {
   // Solution code here...
     // let arrofnames =[];
-   let arrofnames = arr.reduce((item,idx)=>{
-     let returnname =[]
-    item = arr[idx].name
-    returnname.push(item)
-    return returnname
-  },0)
+   let arrofnames = arr.reduce((arr1,value,idx)=>{
+    value = arr[idx].name
+    arr1.push(value)
+    return arr1
+  },[])
   
   return arrofnames
 };
@@ -156,6 +155,14 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+  let arrchar = str.split("")
+ let reversestr = arrchar.reduce((str1,char,idx)=>{
+   char = arrchar[arrchar.length-(idx+1)]
+   str1=str1+char
+   return str1
+
+ },'')
+ return reversestr
 };
 
 /* ------------------------------------------------------------------------------------------------
