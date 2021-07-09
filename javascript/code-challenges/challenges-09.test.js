@@ -17,7 +17,7 @@ const maxInArray = (arr) => {
   return maxi
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* -----------------------------------------------------------------------------------------------
 CHALLENGE 2
 
 Write a function named getCourseKeys that takes in the courseInfo object and returns an array containing the keys for the courseInfo object.
