@@ -130,9 +130,10 @@ const isCapitalized = (str) => {
   // Solution code here..
   let words = []
     let reg =/\b[A-Z](\w)*/g
-    console.log(str.match(reg))
-    words = str.match(reg)
-    return words
+    // console.log(str.match(reg))
+    if (reg.test(str))
+    return str.match(reg)
+    else return words
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -147,10 +148,10 @@ const citiesAtoJ = (arr) => {
   // let smallpatren = /^[a-j](\w)*/g
   let results = arr.filter(city=>{
     if(regPattern.test(city) ) {
-      return city
+      return city.match(regPattern)
     }
   })
-  console.log(results)
+  // console.log(results)
   return results
 };
 
