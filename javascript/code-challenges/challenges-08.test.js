@@ -77,7 +77,7 @@ Write a function named containsW that takes in a string. This function should us
 
 const containsW = (str) => {
   // Solution code here...
-  let regex1 = /w/gi
+  let regex1 = /w/g
  
   let test1 = regex1.test(str)
 
@@ -113,7 +113,7 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
-  let regex1 = /world/gi
+  let regex1 = /world/g
   let test1 = regex1.test(input)
   return test1
 };
@@ -128,9 +128,11 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here..
+  let words = []
     let reg =/\b[A-Z](\w)*/g
     console.log(str.match(reg))
-    if (str.test(reg)){return str.match(reg)} else {return []}
+    words = str.match(reg)
+    return words
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -142,8 +144,9 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 const citiesAtoJ = (arr) => {
   // Solution code here...
   let regPattern = /^[A-J](\w)*/g
+  // let smallpatren = /^[a-j](\w)*/g
   let results = arr.filter(city=>{
-    if(regPattern.test(city)) {
+    if(regPattern.test(city) ) {
       return city
     }
   })
