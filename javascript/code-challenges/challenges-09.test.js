@@ -76,8 +76,14 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   // Solution code here...
- 
+  let updatearr =[]
+  for (const [key, value] of Object.entries(obj)) {
+    updatearr.push(`${key}: ${value}`);
+   
 
+  }
+ 
+  return updatearr
 };
 
 
@@ -154,8 +160,15 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
+  let flag =false
   // Solution code here...
-
+  arr.find(element => {
+    if(element.name === character && Object.values(element).includes(element.children))
+    { 
+      flag =true
+    }
+  });
+  return flag
 };
 
 /* ------------------------------------------------------------------------------------------------
