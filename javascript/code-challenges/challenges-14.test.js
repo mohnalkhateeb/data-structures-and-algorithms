@@ -225,23 +225,53 @@ Here is a sample board:
 
 const detectTicTacToeWin = (board) => {
   // Solution code here...
-  let flag = false
-  for (let i = 0; i < board.length - 1; i++) {
-    
-    for (let j = 0; j < board.length - 1; j++) {
-      if (board[i][j] === 'X' || board[i][j] === 'O') {
-        if (board[i][j] === board[i + 1][j] || board[i][j] === board[i][j + 1] || board[i][j] === board[i + 1][j + 1]) {
-          flag = true
-        }
-        // if(board[i][j] !== board[i + 1][j] || board[i][j] !== board[i][j + 1] || board[i][j] !== board[i + 1][j + 1])
-        // {
-        //   flag =false
-        // }
+  let flag =false
+ const helpCheck = (row1, col1, row2, col2, row3, col3)=>{
+   if (board[row1][col1] === 'X' && board[row2][col2] === 'X' && board[row3][col3] === 'X')
+    return 'X' 
+   if (board[row1][col1] === 'O' && board[row2][col2] === 'O' && board[row3][col3] === 'O')
+    return 'O'
+    if (board[row1][col1] === 'O' && board[row2][col2] === 'O' && board[row3][col3] === 'O')
+    return ''
 
-      
-    }
+ }
+ for ( let i= 0 ; i< 3 ; i++)
+ {
+   if(helpCheck(i,0,i,1,i,2) == 'X' || helpCheck(i,0,i,1,i,2) == 'O')
+  {
+    flag = true
   }
-}
+  else if (helpCheck(i,0,i,1,i,2) == '')
+  {
+    flag =false
+  }
+  if(helpCheck(0,i,1,i,2,i) == 'X' || helpCheck(0,i,1,i,2,i) == 'O')
+  {
+    flag = true
+  }
+  else if (helpCheck(0,i,1,i,2,i) == '')
+  {
+    flag =false
+  }
+  
+ } 
+  if(helpCheck(0,0,1,1,2,2) == 'X' || helpCheck(0,0,1,1,2,2) == 'O')
+  {
+    flag = true
+  }
+  else if (helpCheck(0,0,1,1,2,2) == '')
+  {
+    flag =false
+  }
+  if(helpCheck(0,2,1,1,2,0) == 'X' || helpCheck(0,2,1,1,2,0) == 'O')
+  {
+    flag = true
+  }
+  else if (helpCheck(0,2,1,1,2,0) == '')
+  {
+    flag =false
+  }
+  
   return flag
 };
 
