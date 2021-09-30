@@ -26,7 +26,7 @@ public class Node {
 
   @Override
   public String toString() {
-    String dataPrinted = "{" +data + "}";
+    String dataPrinted = data ;
     return dataPrinted;
   }
 }

@@ -1,6 +1,6 @@
 package linked.list;
 
-public class LinkedList {
+public class LinkedList<flag> {
   private Node head;
   private int size;
 
@@ -81,20 +81,24 @@ public class LinkedList {
     }
     size++;
   }
-  public boolean include(String data)
-  {
+
+  public boolean include(String data) {
     boolean flag = false;
     Node current;
     current = head;
     while (current != null) {
-      if(current.toString() == data) {
-        flag =true;
-      }
-      current =current.getNext();
+      if (current.toString() == data ) {
+        flag = true;
+      System.out.println("List has" + " " +data);
 
-  }
+      }
+
+      current = current.getNext();
+    }
+    if(flag == false)  System.out.println("List doesn't have" + " " + data);
     return flag;
   }
+
   @Override
   public String toString() {
 
@@ -112,7 +116,7 @@ public class LinkedList {
 
       while (current != null) {
         // moves the current reference along the list
-        listPrint.append(current.toString()).append("->");
+        listPrint.append("{").append(current.toString()).append("}").append("->");
         current = current.getNext();
       }
 

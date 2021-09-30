@@ -12,7 +12,10 @@ public class Main {
     linkedList.add("S");
     linkedList.add("O");
     linkedList.add("N");
-    linkedList.insert("F");
+    linkedList.insert("A");
+    linkedList.insert("V");
+    linkedList.insert("A");
+    linkedList.insert("J");
     System.out.println(linkedList.toString());;
     System.out.println("The List is => " + linkedList.size());
     System.out.println(linkedList.include("S"));
