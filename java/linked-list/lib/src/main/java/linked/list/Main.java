@@ -7,30 +7,38 @@ public class Main {
 
     LinkedList linkedList = new LinkedList();
     System.out.println(linkedList.toString());;
-    linkedList.add("J");
-    linkedList.add("A");
-    linkedList.add("S");
-    linkedList.add("O");
-    linkedList.add("N");
+    linkedList.append("J");
+    linkedList.append("A");
+    linkedList.append("S");
+    linkedList.append("O");
+    linkedList.append("N");
+    linkedList.append("5");
     linkedList.insert("A");
     linkedList.insert("V");
     linkedList.insert("A");
     linkedList.insert("J");
-    System.out.println(linkedList.toString());;
+    System.out.println(linkedList.toString());
     System.out.println("The List is => " + linkedList.size());
     System.out.println(linkedList.include("S"));
     System.out.println(linkedList.include("F"));
     System.out.println(linkedList.include("N"));
     System.out.println(linkedList.include("M"));
-
-
+    linkedList.insertBefore("O","7");
+    System.out.println(linkedList.toString());
+    linkedList.insertBefore("J","1");
+    System.out.println(linkedList.toString());
+    linkedList.insertBefore("10","4");
+    linkedList.insertAfter("V","11");
+    System.out.println(linkedList.toString());
+    linkedList.insertAfter("5","12");
+    System.out.println(linkedList.toString());
     try {
       System.out.println("The deleted node was => " + linkedList.remove(-3));;
     } catch (IndexOutOfBoundsException exception) {
       System.out.println(exception.getMessage());
     }
 
-    System.out.println(linkedList.toString());;
+//    System.out.println(linkedList.toString());;
 
     System.out.println("\n----------------------------------------------------------------");
   }
