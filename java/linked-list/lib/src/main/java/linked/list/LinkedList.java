@@ -7,7 +7,7 @@ public class LinkedList<flag> {
   public LinkedList() {
   }
 
-  public void add(String data) {
+  public void append(String data) {
 
     if (head == null) {
       Node node = new Node(data);
@@ -28,6 +28,66 @@ public class LinkedList<flag> {
       size++;
     }
   }
+  public void insertBefore(String before , String data) {
+    try {
+      if (head == null) {
+        System.out.println("list Not found , Use append method ");
+      }else if(head.toString()==before)
+      {
+        this.insert(data);
+      }
+      else {
+        Node beforeNode ;
+        Node current;
+        current = head;
+        beforeNode = head.getNext();
+        while (beforeNode.toString() != before) {
+          // moves the current reference along the list
+          current = current.getNext();
+          beforeNode = beforeNode.getNext();
+        }
+
+        Node node = new Node(data);
+        current.setNext(node);
+        current = current.getNext();
+        current.setNext(beforeNode);
+        size++;
+      }
+    }catch (Exception exception)
+    {
+      System.out.println(exception.getMessage());
+    }
+
+  }
+  public void insertAfter(String after , String data) {
+    try {
+      if (head == null) {
+        System.out.println("list Not found , Use append method ");
+      }
+      else {
+        Node afterNode ;
+        Node current;
+        current = head.getNext();
+        afterNode = head;
+        while (afterNode.toString() != after) {
+          // moves the current reference along the list
+          current = current.getNext();
+          afterNode = afterNode.getNext();
+        }
+
+        Node node = new Node(data);
+        afterNode.setNext(node);
+        afterNode = afterNode.getNext();
+        afterNode.setNext(current);
+        size++;
+      }
+    }catch (Exception exception)
+    {
+      System.out.println(exception.getMessage());
+    }
+
+  }
+
 
   public String remove(int index) throws IndexOutOfBoundsException {
     String deletedNode = "";
