@@ -28,6 +28,7 @@ public class LinkedList<flag> {
       size++;
     }
   }
+
   public void insertBefore(String before , String data) {
     try {
       if (head == null) {
