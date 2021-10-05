@@ -28,6 +28,7 @@ public class LinkedList<flag> {
       size++;
     }
   }
+
   public void insertBefore(String before , String data) {
     try {
       if (head == null) {
@@ -87,7 +88,35 @@ public class LinkedList<flag> {
     }
 
   }
+  public String kthFromEnd( int kth) {
+    String dataReturn = null;
+      try{
 
+      if (head == null) {
+        System.out.println("list Not found , Use append method ");
+      }
+      else {
+        int size =0;
+        Node current;
+        current = head;
+        while (current.getNext() != null) {
+          // moves the current reference along the list
+          current = current.getNext();
+          size ++;
+        }
+        current =head;
+        for(int i =0; i <(size-kth) ; i++)
+        {
+          current = current.getNext();
+        }
+      dataReturn = current.toString();
+      }
+    }catch (Exception exception)
+    {
+      System.out.println(exception.getMessage());
+    }
+      return dataReturn;
+  }
 
   public String remove(int index) throws IndexOutOfBoundsException {
     String deletedNode = "";

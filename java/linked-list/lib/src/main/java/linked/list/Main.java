@@ -6,7 +6,8 @@ public class Main {
     System.out.println("\nLinked List Demo \n");
 
     LinkedList linkedList = new LinkedList();
-    System.out.println(linkedList.toString());;
+    System.out.println(linkedList.toString());
+    System.out.println(linkedList.kthFromEnd(4));
     linkedList.append("J");
     linkedList.append("A");
     linkedList.append("S");
@@ -18,6 +19,9 @@ public class Main {
     linkedList.insert("A");
     linkedList.insert("J");
     System.out.println(linkedList.toString());
+    System.out.println(linkedList.kthFromEnd(3));
+    System.out.println(linkedList.kthFromEnd(0));
+
     System.out.println("The List is => " + linkedList.size());
     System.out.println(linkedList.include("S"));
     System.out.println(linkedList.include("F"));
@@ -32,6 +36,7 @@ public class Main {
     System.out.println(linkedList.toString());
     linkedList.insertAfter("5","12");
     System.out.println(linkedList.toString());
+    System.out.println(linkedList.kthFromEnd(8));
     try {
       System.out.println("The deleted node was => " + linkedList.remove(-3));;
     } catch (IndexOutOfBoundsException exception) {
