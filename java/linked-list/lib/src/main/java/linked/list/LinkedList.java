@@ -187,6 +187,45 @@ public class LinkedList<flag> {
     if(flag == false)  System.out.println("List doesn't have" + " " + data);
     return flag;
   }
+  public  static LinkedList<String> zipLists(LinkedList<String> list1, LinkedList<String> list2)
+  {
+    if(list1.head == null && list2.head == null)
+    {
+      return null;
+    }
+    else if (list1.head == null)
+    {
+      return list2;
+    }
+    else if (list2.head == null)
+    {
+     return  list1;
+    }
+    else {
+      Node current1 = list1.head;
+      Node current2 = list2.head;
+     if(list1.size() >= list2.size())
+     {
+       while (current2!=null)
+       {
+         list1.insertAfter(current1.toString(),current2.toString());
+         current1 =current1.getNext().getNext();
+         current2 = current2.getNext();
+
+       }
+       return list1;
+     }
+     else {
+       while (current1 != null)
+       {
+         list2.insertBefore(current2.toString(),current1.toString());
+         current1 =current1.getNext();
+         current2 = current2.getNext();
+       }
+       return list2;
+     }
+     }
+    }
 
   @Override
   public String toString() {
