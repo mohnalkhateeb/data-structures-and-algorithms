@@ -170,7 +170,68 @@ public class LinkedList<flag> {
     }
     size++;
   }
+  public static boolean palindrome(LinkedList list) {
+    boolean flag = true;
+    if (list.head == null) {
+      flag = false;
+    } else if (list.size == 1) {
+      flag =true;
+    } else {
+      String[] plind = new String[list.size];
+      Node current = list.head;
+      int index = 0;
+      while (current != null) {
+        plind[index] = current.toString();
+        index ++ ;
+        current = current.getNext();
+      }
+      String min;
+      String max;
+      for(int i = 0 ; i< plind.length/2 ; i++)
+      {
+        if(plind[i] != plind[plind.length-1-i])
+        {
+          flag = false;
+          break;
+        }
+      }
 
+    }
+    return flag;
+  }
+  public static void reverse(LinkedList list)
+  {
+    if(list.head == null){
+      System.out.println("List is empty");
+    }
+    else if(list.size==1)
+    {
+      System.out.println(list.toString());
+    }
+    else {
+      String[] temp = new String[list.size];
+      Node head2 = null;
+      Node current = list.head;
+      int index = 0;
+      while (current != null) {
+        temp[index] = current.toString();
+        current = current.getNext();
+        index ++;
+      }
+      while (current != null) {
+        current = current.getNext();
+      }
+      current = list.head;
+      head2 = current;
+      for(int i= temp.length-1 ; i >= 0 ; i--)
+      {
+        current.setData(temp[i]);
+        current = current.getNext();
+      }
+
+      System.out.println(list.toString());
+    }
+  }
   public boolean include(String data) {
     boolean flag = false;
     Node current;

@@ -53,6 +53,20 @@ public class Main {
 //    System.out.println(linkedList.toString());;
 
     System.out.println("\n----------------------------------------------------------------");
+    LinkedList list4 = new LinkedList();
+    LinkedList list5 = new LinkedList();
+    list4.append("1");
+    list4.append("3");
+    list4.append("1");
+//    list4.append("5");
+    list5.append("4");
+    list5.append("2");
+    list5.append("3");
+    list5.append("7");
+    System.out.println(LinkedList.palindrome(list4));
+    System.out.println(LinkedList.palindrome(list5));
+//    LinkedList.reverse(list4);
+    LinkedList.reverse(list5);
 
   }
 }
