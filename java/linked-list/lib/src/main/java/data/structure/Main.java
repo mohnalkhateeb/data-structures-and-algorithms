@@ -1,7 +1,13 @@
-package linked.list;
+package data.structure;
 
 public class Main {
   public static void main(String[] args) {
+//    linkedListCall();
+      stackCall();
+//      queueCall();
+  }
+  private static void linkedListCall()
+  {
     System.out.println("----------------------------------------------------------------");
     System.out.println("\nLinked List Demo \n");
 
@@ -67,6 +73,50 @@ public class Main {
     System.out.println(LinkedList.palindrome(list5));
 //    LinkedList.reverse(list4);
     LinkedList.reverse(list5);
+  }
+  private static void stackCall()
+  {
+    Stack stack = new Stack();
+    String S = stack.toString();
+    System.out.println(S);
+    System.out.println(stack.isEmpty());
+    stack.push("K");
+    stack.push("L");
+    stack.push("M");
+    stack.push("W");
+    String S1 = stack.toString();
+    System.out.println(S1);
+
+    System.out.println(stack.peek());
+    System.out.println(stack.isEmpty());
+    stack.pop();
+    System.out.println(stack.pop());
+    System.out.println(stack.toString());
+    System.out.println(stack.peek());
+    System.out.println(stack.isEmpty());
+
+
+  }
+  private static void queueCall()
+  {
+    Queue queue = new Queue();
+    String S = queue.toString();
+    System.out.println(S);
+    System.out.println(queue.isEmpty());
+    queue.enqueue("K");
+    queue.enqueue("L");
+    queue.enqueue("M");
+    queue.enqueue("W");
+    String S1 = queue.toString();
+    System.out.println(S1);
+
+    System.out.println(queue.peek());
+    System.out.println(queue.isEmpty());
+    queue.dequeue();
+    System.out.println(queue.dequeue());
+    System.out.println(queue.toString());
+    System.out.println(queue.peek());
+    System.out.println(queue.isEmpty());
 
   }
 }
