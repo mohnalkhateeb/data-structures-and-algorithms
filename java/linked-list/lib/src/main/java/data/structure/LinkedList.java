@@ -1,4 +1,4 @@
-package linked.list;
+package data.structure;
 
 public class LinkedList<flag> {
   private Node head;

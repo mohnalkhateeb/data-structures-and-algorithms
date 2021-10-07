@@ -1,4 +1,4 @@
-package linked.list;
+package data.structure;
 
 public class Node {
   private String data;
