@@ -170,7 +170,68 @@ public class LinkedList<flag> {
     }
     size++;
   }
+  public static boolean palindrome(LinkedList list) {
+    boolean flag = true;
+    if (list.head == null) {
+      flag = false;
+    } else if (list.size == 1) {
+      flag =true;
+    } else {
+      String[] plind = new String[list.size];
+      Node current = list.head;
+      int index = 0;
+      while (current != null) {
+        plind[index] = current.toString();
+        index ++ ;
+        current = current.getNext();
+      }
+      String min;
+      String max;
+      for(int i = 0 ; i< plind.length/2 ; i++)
+      {
+        if(plind[i] != plind[plind.length-1-i])
+        {
+          flag = false;
+          break;
+        }
+      }
 
+    }
+    return flag;
+  }
+  public static void reverse(LinkedList list)
+  {
+    if(list.head == null){
+      System.out.println("List is empty");
+    }
+    else if(list.size==1)
+    {
+      System.out.println(list.toString());
+    }
+    else {
+      String[] temp = new String[list.size];
+      Node head2 = null;
+      Node current = list.head;
+      int index = 0;
+      while (current != null) {
+        temp[index] = current.toString();
+        current = current.getNext();
+        index ++;
+      }
+      while (current != null) {
+        current = current.getNext();
+      }
+      current = list.head;
+      head2 = current;
+      for(int i= temp.length-1 ; i >= 0 ; i--)
+      {
+        current.setData(temp[i]);
+        current = current.getNext();
+      }
+
+      System.out.println(list.toString());
+    }
+  }
   public boolean include(String data) {
     boolean flag = false;
     Node current;
@@ -187,6 +248,45 @@ public class LinkedList<flag> {
     if(flag == false)  System.out.println("List doesn't have" + " " + data);
     return flag;
   }
+  public  static LinkedList<String> zipLists(LinkedList<String> list1, LinkedList<String> list2)
+  {
+    if(list1.head == null && list2.head == null)
+    {
+      return null;
+    }
+    else if (list1.head == null)
+    {
+      return list2;
+    }
+    else if (list2.head == null)
+    {
+     return  list1;
+    }
+    else {
+      Node current1 = list1.head;
+      Node current2 = list2.head;
+     if(list1.size() >= list2.size())
+     {
+       while (current2!=null)
+       {
+         list1.insertAfter(current1.toString(),current2.toString());
+         current1 =current1.getNext().getNext();
+         current2 = current2.getNext();
+
+       }
+       return list1;
+     }
+     else {
+       while (current1 != null)
+       {
+         list2.insertBefore(current2.toString(),current1.toString());
+         current1 =current1.getNext();
+         current2 = current2.getNext();
+       }
+       return list2;
+     }
+     }
+    }
 
   @Override
   public String toString() {

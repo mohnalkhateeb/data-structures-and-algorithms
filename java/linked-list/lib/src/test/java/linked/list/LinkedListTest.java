@@ -32,14 +32,14 @@ public class LinkedListTest {
   @Test
   public void testAppend() {
 
+    LinkedList<String> list1 = new LinkedList();
+    list1.append("Hello");
+    list1.append("JAVA");
+    list1.append("ASAC");
+    list1.append("401");
 
-    list.append("Hello");
-    list.append("JAVA");
-    list.append("ASAC");
-    list.append("401");
-
-    assertEquals(list.toString(), ("\"{Hello}->{JAVa}->{ASAC}->{401}->null\""));
-    assertEquals(list.size(), 4);
+    assertEquals(list1.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{401}->null\""));
+    assertEquals(list1.size(), 4);
   }
   @Test
   public void testInsertBefore() {
@@ -51,8 +51,8 @@ public class LinkedListTest {
     list.append("401");
     list.insertBefore("401","Software");
 
-    assertEquals(list.toString(), ("\"{Hello}->{JAVa}->{ASAC}->{Software}->{401}->null\""));
-    assertEquals(list.size(), 4);
+    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{Software}->{401}->null\""));
+    assertEquals(list.size(), 5);
   }
   @Test
   public void testInsertAfter() {
@@ -62,9 +62,24 @@ public class LinkedListTest {
     list.append("JAVA");
     list.append("ASAC");
     list.append("401");
-    list.insertAfter("Software","Software");
+    list.insertAfter("ASAC","Software");
 
-    assertEquals(list.toString(), ("\"{Hello}->{JAVa}->{ASAC}->{Software}->{401}->null\""));
-    assertEquals(list.size(), 4);
+    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{Software}->{401}->null\""));
+    assertEquals(list.size(), 5);
+  }
+  @Test
+  public void zipLinkedListTest() {
+
+    LinkedList<String> list1 = new LinkedList();
+    list.append("Hello");
+    list.append("JAVA");
+    list.append("ASAC");
+    list.append("401");
+    list1.append("Mohammad in");
+    list1.append("at");
+    list1.append("Level");
+    LinkedList.zipLists(list,list1);
+    assertEquals(list.toString(), ("\"{Hello}->{Mohammad in}->{JAVA}->{at}->{ASAC}->{Level}->{401}->null\""));
+    assertEquals(list.size(), 7);
   }
 }
