@@ -33,26 +33,38 @@ public class LinkedList<flag> {
     try {
       if (head == null) {
         System.out.println("list Not found , Use append method ");
-      }else if(head.toString()==before)
+      }
+        else if(head.toString()==before)
       {
         this.insert(data);
       }
       else {
+        boolean flag = false;
         Node beforeNode ;
         Node current;
         current = head;
         beforeNode = head.getNext();
-        while (beforeNode.toString() != before) {
-          // moves the current reference along the list
-          current = current.getNext();
-          beforeNode = beforeNode.getNext();
-        }
+        while ( beforeNode !=null) {
+          if(beforeNode.toString() == before)
+          {
+            Node node = new Node(data);
+            current.setNext(node);
+            current = current.getNext();
+            current.setNext(beforeNode);
+            size++;
+            flag = true;
+            break;
+          }
+          else {
+            current = current.getNext();
+            beforeNode = beforeNode.getNext();
+          }
 
-        Node node = new Node(data);
-        current.setNext(node);
-        current = current.getNext();
-        current.setNext(beforeNode);
-        size++;
+        }
+        if (flag == false)
+        {
+          System.out.println("The Value of insertion before it is not exist ");
+        }
       }
     }catch (Exception exception)
     {
@@ -66,21 +78,40 @@ public class LinkedList<flag> {
         System.out.println("list Not found , Use append method ");
       }
       else {
+        boolean flag = false;
         Node afterNode ;
         Node current;
         current = head.getNext();
         afterNode = head;
-        while (afterNode.toString() != after) {
-          // moves the current reference along the list
-          current = current.getNext();
-          afterNode = afterNode.getNext();
+        while (afterNode.getNext() != null) {
+          if(afterNode.toString() == after)
+          {
+            Node node = new Node(data);
+            afterNode.setNext(node);
+            afterNode = afterNode.getNext();
+            afterNode.setNext(current);
+            flag = true;
+            size++;
+            break;
+
+          }else {
+            current = current.getNext();
+            afterNode = afterNode.getNext();
+          }
+
+        }
+        if(afterNode.toString() == after)
+        {
+          Node node = new Node(data);
+          afterNode.setNext(node);
+          flag = true;
+          size ++;
+        }
+        if (flag == false)
+        {
+          System.out.println("The Value of insertion after it is not exist ");
         }
 
-        Node node = new Node(data);
-        afterNode.setNext(node);
-        afterNode = afterNode.getNext();
-        afterNode.setNext(current);
-        size++;
       }
     }catch (Exception exception)
     {

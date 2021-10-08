@@ -37,9 +37,10 @@ public class LinkedListTest {
     list1.append("JAVA");
     list1.append("ASAC");
     list1.append("401");
+    list1.append("Level");
 
-    assertEquals(list1.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{401}->null\""));
-    assertEquals(list1.size(), 4);
+    assertEquals(list1.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{401}->{Level}->null\""));
+    assertEquals(list1.size(), 5);
   }
   @Test
   public void testInsertBefore() {
@@ -50,10 +51,24 @@ public class LinkedListTest {
     list.append("ASAC");
     list.append("401");
     list.insertBefore("401","Software");
+    list.insertBefore("Software","development");
 
-    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{Software}->{401}->null\""));
-    assertEquals(list.size(), 5);
+    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{development}->{Software}->{401}->null\""));
+    assertEquals(list.size(), 6);
   }
+  @Test
+  public void testInsertBeforeNonExistValue() {
+
+
+    list.append("Hello");
+    list.append("JAVA");
+    list.append("ASAC");
+    list.append("401");
+    list.insertBefore("5","Software");
+
+    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{401}->null\""),"The Value of insertion before it is not exist");
+  }
+
   @Test
   public void testInsertAfter() {
 
@@ -63,9 +78,22 @@ public class LinkedListTest {
     list.append("ASAC");
     list.append("401");
     list.insertAfter("ASAC","Software");
+    list.insertAfter("Software","development");
 
-    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{Software}->{401}->null\""));
-    assertEquals(list.size(), 5);
+    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{Software}->{development}->{401}->null\""));
+    assertEquals(list.size(), 6);
+  }
+  @Test
+  public void testInsertAfterNonExistValue() {
+
+
+    list.append("Hello");
+    list.append("JAVA");
+    list.append("ASAC");
+    list.append("401");
+    list.insertBefore("5","Software");
+
+    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{401}->null\""),"The Value of insertion after it is not exist");
   }
   @Test
   public void zipLinkedListTest() {
