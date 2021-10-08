@@ -2,8 +2,8 @@ package data.structure;
 
 public class Main {
   public static void main(String[] args) {
-//    linkedListCall();
-      stackCall();
+    linkedListCall();
+//      stackCall();
 //      queueCall();
   }
   private static void linkedListCall()
@@ -26,30 +26,31 @@ public class Main {
     linkedList.insert("A");
     linkedList.insert("J");
     System.out.println(linkedList.toString());
-    System.out.println(linkedList.kthFromEnd(3));
-    System.out.println(linkedList.kthFromEnd(0));
-    list2.append("3");
-    list2.insert("M");
-    list2.insertAfter("3","W");
-    System.out.println(list2.toString());
+//    System.out.println(linkedList.kthFromEnd(3));
+//    System.out.println(linkedList.kthFromEnd(0));
+//    list2.append("3");
+//    list2.insert("M");
+//    list2.insertAfter("3","W");
+//    System.out.println(list2.toString());
 
 //    System.out.println("The List is => " + linkedList.size());
-    System.out.println(linkedList.include("S"));
-    System.out.println(linkedList.include("F"));
-    System.out.println(linkedList.include("N"));
-    System.out.println(linkedList.include("M"));
-    System.out.println(LinkedList.zipLists(linkedList,list2));
+//    System.out.println(linkedList.include("S"));
+//    System.out.println(linkedList.include("F"));
+//    System.out.println(linkedList.include("N"));
+//    System.out.println(linkedList.include("M"));
+//    System.out.println(LinkedList.zipLists(linkedList,list2));
 //    list2.insertBefore("M","1");
-    linkedList.insertBefore("O","7");
+//    linkedList.insertBefore("I","7");
 //    System.out.println(linkedList.toString());
-    linkedList.insertBefore("J","1");
-//    System.out.println(linkedList.toString());
-    linkedList.insertBefore("10","4");
+//    linkedList.insertBefore("J","1");
+////    System.out.println(linkedList.toString());
+//    linkedList.insertBefore("10","4");
     linkedList.insertAfter("V","11");
-//    System.out.println(linkedList.toString());
+    System.out.println(linkedList.toString());
+    linkedList.insertAfter("KK","LL");
     linkedList.insertAfter("5","12");
     System.out.println(linkedList.toString());
-//    System.out.println(linkedList.kthFromEnd(8));
+    System.out.println(linkedList.kthFromEnd(8));
     try {
       System.out.println("The deleted node was => " + linkedList.remove(-3));;
     } catch (IndexOutOfBoundsException exception) {
@@ -72,7 +73,7 @@ public class Main {
     System.out.println(LinkedList.palindrome(list4));
     System.out.println(LinkedList.palindrome(list5));
 //    LinkedList.reverse(list4);
-    LinkedList.reverse(list5);
+//    LinkedList.reverse(list5);
   }
   private static void stackCall()
   {
