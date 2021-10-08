@@ -8,4 +8,5 @@
     - [Array Insert Shift](array-insert-shift/README.md)
 
 * ### Linked List
+* [Data Structure Documentation ](./linked-list/README.md)
 
