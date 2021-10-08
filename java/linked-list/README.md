@@ -29,7 +29,7 @@ create three functions for Linked list class :
 ![append function](./resources/append-linked-list.png)
 
 * ##### insertBefor
-![insertBefor function](./resources/inser-befor-linkedlist.png)
+![insertBefor function](resources/inser-befor-Linkedlist.png)
 * ##### insertAfter
 ![insertBefor function](./resources/inser-after-linkedlist.png)
 
