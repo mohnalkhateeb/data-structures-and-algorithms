@@ -1,6 +1,6 @@
 # Data Structure
 # Linked List
-## `Lab-05` Linked List Implementation
+## `Challenge-05` Linked List Implementation
 A linked list is a sequence of data structures, which are connected together via links. Linked List is a sequence of links which contains items.
 * ### Classes
 - #### Node
@@ -18,7 +18,7 @@ A linked list is a sequence of data structures, which are connected together via
          Function return a string for representing all the values in the Linked List, formatted as:
         "{ a } -> { b } -> { c } -> NULL"
       - O(n) time and O(1) space
-## `Lab-06` linked-list-insertions
+## `Challenge-06` linked-list-insertions
 # Challenge Summary
 create three functions for Linked list class :
 * 1- append(value) :function to append value in end of any given Linked List that return the same Linked List with new value in the end and increase the size of linked list by 1
@@ -75,4 +75,24 @@ space --> O(1)
 9 - check if flag equal false print message 'The Value of insertion after it is not exist'
 10-Big O : time --> O(n)
 space --> O(1)
+
+## `Challenge-07` linked-list-kth
+# Challenge Summary
+we need to write function return the value of node that is in given index from the end of linked list
+
+## Whiteboard Process
+![kth from end](resources/kthfromEnd-linkedlist.png)
+
+## Approach & Efficiency
+1 - create method return string with integer index prameter
+2- check if Linked List is empty or index less than 0 or index greater than linked list size to throw the excption
+3- declare current pointer indicate to head of linked list
+4- loop from 0 to (size - index)
+5- inside the loop let current = current.next
+6- return the data insid the current
+
+Big O : time --> O(n)
+space --> O(1)
+
+
 

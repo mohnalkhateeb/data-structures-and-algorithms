@@ -110,4 +110,21 @@ public class LinkedListTest {
     assertEquals(list.toString(), ("\"{Hello}->{Mohammad in}->{JAVA}->{at}->{ASAC}->{Level}->{401}->null\""));
     assertEquals(list.size(), 7);
   }
+  @Test
+  public void testkthFromEnd() {
+      LinkedList<String> list1 = new LinkedList();
+      list1.append("Hello");
+      list1.append("JAVA");
+      list1.append("ASAC");
+      list1.append("401");
+      list1.append("Level");
+
+      assertEquals(list1.kthFromEnd(0), "Level");
+      assertEquals(list1.kthFromEnd(2), "ASAC");
+      assertEquals(list1.kthFromEnd(4), "Hello");
+      assertEquals(list1.kthFromEnd(-1), "Index out of Bound");
+      assertEquals(list1.kthFromEnd(7), "Index out of bound");
+      assertEquals(list1.size(), 5);
+    }
+
 }
