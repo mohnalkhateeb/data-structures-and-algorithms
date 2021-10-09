@@ -278,42 +278,60 @@ public class LinkedList<flag> {
   }
   public  static LinkedList<String> zipLists(LinkedList<String> list1, LinkedList<String> list2)
   {
-    if(list1.head == null && list2.head == null)
+    try {
+      if(list1.head == null && list2.head == null)
+      {
+        return list1;
+      }
+      else if (list1.head == null)
+      {
+        return list2;
+      }
+      else if (list2.head == null)
+      {
+        return  list1;
+      }
+      else {
+        Node current1 = list1.head;
+        Node current2 = list2.head;
+        Node next1 = list1.head.getNext();
+        Node next2 = list2.head.getNext();
+        if(list1.size >= list2.size)
+        {
+          while (next2 != null)
+          {
+            current2.setNext(next1);
+            current1.setNext(current2);
+            current1 =next1;
+            current2 = next2;
+            next1 = next1.getNext();
+            next2 = next2.getNext();
+          }
+          current1.setNext(current2);
+          current2.setNext(next1);
+        }
+        else {
+          while (next1 != null)
+          {
+            current2.setNext(next1);
+            current1.setNext(current2);
+            current1 =next1;
+            current2 = next2;
+            next1 = next1.getNext();
+            next2 = next2.getNext();
+          }
+          current1.setNext(current2);
+          current2.setNext(next1);
+        }
+        list1.size += list2.size;
+        list2.size = list1.size-1;
+        return list1;
+      }
+    }catch (OutOfMemoryError error)
     {
-      return null;
+      System.out.println(error.toString());
     }
-    else if (list1.head == null)
-    {
-      return list2;
-    }
-    else if (list2.head == null)
-    {
-     return  list1;
-    }
-    else {
-      Node current1 = list1.head;
-      Node current2 = list2.head;
-     if(list1.size() >= list2.size())
-     {
-       while (current2!=null)
-       {
-         list1.insertAfter(current1.toString(),current2.toString());
-         current1 =current1.getNext().getNext();
-         current2 = current2.getNext();
-
-       }
-       return list1;
-     }
-     else {
-       while (current1 != null)
-       {
-         list2.insertBefore(current2.toString(),current1.toString());
-         current1 =current1.getNext();
-         current2 = current2.getNext();
-       }
-       return list2;
-     }
-     }
+    return list1;
     }
 
   @Override

@@ -94,5 +94,30 @@ we need to write function return the value of node that is in given index from t
 Big O : time --> O(n)
 space --> O(1)
 
+## `Challenge-08` linked-list-zip
+# Challenge Summary
+we need to write function called listzip take two listedlists
+as prameters and return Linked List that Zip the
+two linked lists together into one so that the
+nodes alternate between the two lists and return
+a reference to the head of the zipped list.
+## Whiteboard Process
+![kth from end](resources/zip-linked-list.png)
+
+## Approach & Efficiency
+1 - create method return linked list with two linked lists data prameter
+2- check if two linked lists are empth then return empty linked list
+3- check if one of them is empty then return the filling one
+4- create current1 Node and let it equal list1.head and create current2 Node and let it equal list2.head
+5- creat next1 Node and let it equal current1.next and creat next2 Node and let it equal current2.next
+6- check if size of one them is greater than the second one
+7 - looping while the next pointer  of small array not equal null
+8- inside loop let 1- current2.next equal next1 2-  current1.next =current2  3- current1 =next1 4-current2 = next2 5-  next1 = next1.Next 6-   next2 = next2.Next
+9- outside loop let current1.Next =current2 and current2.next = next1
+10 - retun list1
+
+Big O : time --> O(n)
+space --> O(1)
+
 
 
