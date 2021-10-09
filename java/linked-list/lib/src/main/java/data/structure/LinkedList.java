@@ -120,33 +120,30 @@ public class LinkedList<flag> {
 
   }
   public String kthFromEnd( int kth) {
-    String dataReturn = null;
       try{
-
       if (head == null) {
-        System.out.println("list Not found , Use append method ");
+        return  "list Not found , Use append method ";
       }
-      else {
-        int size =0;
+      else if (kth <0) {
+        return  "Index out of Bound";
+      }
+        else {
         Node current;
-        current = head;
-        while (current.getNext() != null) {
-          // moves the current reference along the list
-          current = current.getNext();
-          size ++;
+        if (size -1 < kth) {
+          return "Index out of bound";
+        } else {
+          current = head;
+          for (int i = 0; i < (size - kth-1); i++) {
+            current = current.getNext();
+          }
+          return current.toString();
         }
-        current =head;
-        for(int i =0; i <(size-kth) ; i++)
-        {
-          current = current.getNext();
-        }
-      dataReturn = current.toString();
       }
-    }catch (Exception exception)
+    }catch (IndexOutOfBoundsException exception)
     {
       System.out.println(exception.getMessage());
+      return "Index out of bound ";
     }
-      return dataReturn;
   }
 
   public String remove(int index) throws IndexOutOfBoundsException {

@@ -14,7 +14,7 @@ public class Main {
     LinkedList linkedList = new LinkedList();
     LinkedList list2 = new LinkedList();
     System.out.println(linkedList.toString());
-    System.out.println(linkedList.kthFromEnd(4));
+    System.out.println("value of index -->" + linkedList.kthFromEnd(4));
     linkedList.append("J");
     linkedList.append("A");
     linkedList.append("S");
@@ -26,8 +26,11 @@ public class Main {
     linkedList.insert("A");
     linkedList.insert("J");
     System.out.println(linkedList.toString());
-//    System.out.println(linkedList.kthFromEnd(3));
-//    System.out.println(linkedList.kthFromEnd(0));
+    System.out.println("value of index -->" + linkedList.kthFromEnd(3));
+    System.out.println("value of index -->" + linkedList.kthFromEnd(0));
+    linkedList.kthFromEnd(15);
+    System.out.println("value of index -->" + linkedList.kthFromEnd(15));
+    System.out.println("value of index -->" + linkedList.kthFromEnd(-1));
 //    list2.append("3");
 //    list2.insert("M");
 //    list2.insertAfter("3","W");
@@ -50,7 +53,7 @@ public class Main {
     linkedList.insertAfter("KK","LL");
     linkedList.insertAfter("5","12");
     System.out.println(linkedList.toString());
-    System.out.println(linkedList.kthFromEnd(8));
+    System.out.println("value of index -->" + linkedList.kthFromEnd(8));
     try {
       System.out.println("The deleted node was => " + linkedList.remove(-3));;
     } catch (IndexOutOfBoundsException exception) {
