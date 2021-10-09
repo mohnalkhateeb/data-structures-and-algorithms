@@ -103,12 +103,37 @@ public class LinkedListTest {
     list.append("JAVA");
     list.append("ASAC");
     list.append("401");
+    list.append("good");
     list1.append("Mohammad in");
     list1.append("at");
     list1.append("Level");
     LinkedList.zipLists(list,list1);
-    assertEquals(list.toString(), ("\"{Hello}->{Mohammad in}->{JAVA}->{at}->{ASAC}->{Level}->{401}->null\""));
-    assertEquals(list.size(), 7);
+    assertEquals(list.toString(), ("\"{Hello}->{Mohammad in}->{JAVA}->{at}->{ASAC}->{Level}->{401}->{good}->null\""));
+    assertEquals(list.size(), 8);
+    assertEquals(list1.size(),7);
+  }
+  @Test
+  public void zipLinkedListTestEmptyLists() {
+
+    LinkedList<String> list1 = new LinkedList();
+    LinkedList.zipLists(list,list1);
+    assertEquals(list.toString(), "List is empty");
+    assertEquals(list.size(), 0);
+    assertEquals(list1.size(),0);
+  }
+  @Test
+  public void zipLinkedListTestOneOfThemEmpty() {
+
+    LinkedList<String> list1 = new LinkedList();
+    list.append("Hello");
+    list.append("JAVA");
+    list.append("ASAC");
+    list.append("401");
+    list.append("good");
+    LinkedList.zipLists(list,list1);
+    assertEquals(list.toString(), ("\"{Hello}->{JAVA}->{ASAC}->{401}->{good}->null\""));
+    assertEquals(list.size(), 5);
+    assertEquals(list1.size(),0);
   }
   @Test
   public void testkthFromEnd() {
