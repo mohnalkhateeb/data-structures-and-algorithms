@@ -2,9 +2,10 @@ package data.structure;
 
 public class Main {
   public static void main(String[] args) {
-    linkedListCall();
+//    linkedListCall();
 //      stackCall();
 //      queueCall();
+    pusdoQueueCall();
   }
   private static void linkedListCall()
   {
@@ -112,6 +113,24 @@ public class Main {
     System.out.println(queue.toString());
     System.out.println(queue.peek());
     System.out.println(queue.isEmpty());
+
+  }
+  private static void pusdoQueueCall()
+  {
+    PseudoQueue pseudoQueue = new PseudoQueue();
+    System.out.println(pseudoQueue.toString());
+    pseudoQueue.enqueue("P");
+    pseudoQueue.enqueue("8");
+    pseudoQueue.enqueue("J");
+    pseudoQueue.enqueue("U");
+    System.out.println(pseudoQueue.toString());
+    System.out.println(pseudoQueue.dequeue());
+    System.out.println(pseudoQueue.toString());
+    System.out.println(pseudoQueue.dequeue());
+    System.out.println(pseudoQueue.dequeue());
+    System.out.println(pseudoQueue.dequeue());
+    System.out.println(pseudoQueue.dequeue());
+
 
   }
 }
