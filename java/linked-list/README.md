@@ -119,5 +119,35 @@ a reference to the head of the zipped list.
 Big O : time --> O(n)
 space --> O(1)
 
+# Challenge-10` stack-and-queue
+* ### Classes
+- #### Node
+  Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+- #### Stack
+Stack class that has a top property. It creates an empty Stack when instantiated
+- ##### Features
+    - ###### push
+      adds a new node with that value to the top of the stack with an O(1) Time performance.
+    - ###### pop()
+      Returns the value from node from the top of the stack Removes the node from the top of the stack
+      and Should raise exception when called on empty stack
+    - ###### peek
+      Returns Value of the node located at the top of the stack and Should raise exception when called on empty stack
+    - ###### isEmpty
+      Returns: Boolean indicating whether or not the stack is empty.
+
+- #### Queue
+Queue class that has a front property. It creates an empty Queue when instantiated.
+  - ##### Features
+    - ###### enqueue
+      adds a new node with that value to the back of the queue with an O(1) Time performance.
+    - ###### dequeue
+      Returns  the value from node from the front of the queue and removes the node from the front of the queue and Should raise exception when called on empty queue
+    - ###### peek
+      Returns Value of the node located at the front of the queue and Should raise exception when called on empty queue
+    - ###### isEmpty
+      Returns: Boolean indicating whether or not the queue is empty.
+
+
 
 
