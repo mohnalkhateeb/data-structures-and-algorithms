@@ -148,6 +148,29 @@ Queue class that has a front property. It creates an empty Queue when instantiat
     - ###### isEmpty
       Returns: Boolean indicating whether or not the queue is empty.
 
+## `Challenge-11` stack-queue-pseudo
+# Challenge Summary
+we need to create class clalled pseudo queue this class work as queue but using two Stack instans and it contains two functions (enque and deque)
+- enque : function with value prameter Inserts value into the PseudoQueue, using a first-in, first-out approach
+- dequeue :Extracts a value from the PseudoQueue, using a first-in, first-out approach.h
+## Whiteboard Process
+![stack-queue-pseudo](resources/pesudo queue.png)
+
+## Approach & Efficiency
+1 - create class called PesudoQueue with two stacks variables (inbox and outbox) and work as queue job
+2- to enqueue we just push the new value in inbox stack
+3 - to deque
+3.1 - if inbox is empty return null
+3.2 - if inbox is not empty check if outbox is empty
+3.3 - if outbox is empty loop while the inbox is not empty
+3.4 - inside loop push the value inbox pop into outbox stack
+3.5 - pop from outbox stack
+
+- Big O enqueue : time --> O(1) space --> O(1)
+- Big O dequeue : time --> O(n) space --> O(n)
+
+
+
 
 
 
