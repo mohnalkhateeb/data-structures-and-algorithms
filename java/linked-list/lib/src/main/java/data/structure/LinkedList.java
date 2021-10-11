@@ -1,53 +1,53 @@
 package data.structure;
 
-public class LinkedList<flag> {
-  private Node head;
+public class LinkedList<T> {
+  private Node<T> head;
   private int size;
 
   public LinkedList() {
   }
 
-  public void append(String data) {
+  public void append(T data) {
 
     if (head == null) {
-      Node node = new Node(data);
+      Node<T> node = new Node<>(data);
       head = node;
       size++;
     } else {
       // else traverse the list and get to the end
       // make last node point to the new node
-      Node current;
+      Node<T> current;
       current = head;
       while (current.getNext() != null) {
         // moves the current reference along the list
         current = current.getNext();
       }
 
-      Node node = new Node(data);
+      Node<T> node = new Node<>(data);
       current.setNext(node);
       size++;
     }
   }
 
-  public void insertBefore(String before , String data) {
+  public void insertBefore(T before , T data) {
     try {
       if (head == null) {
         System.out.println("list Not found , Use append method ");
       }
-        else if(head.toString()==before)
+        else if(head.toString()==before.toString())
       {
         this.insert(data);
       }
       else {
         boolean flag = false;
-        Node beforeNode ;
-        Node current;
+        Node<T> beforeNode ;
+        Node<T> current;
         current = head;
         beforeNode = head.getNext();
         while ( beforeNode !=null) {
-          if(beforeNode.toString() == before)
+          if(beforeNode.toString() == before.toString())
           {
-            Node node = new Node(data);
+            Node<T> node = new Node(data);
             current.setNext(node);
             current = current.getNext();
             current.setNext(beforeNode);
@@ -72,19 +72,19 @@ public class LinkedList<flag> {
     }
 
   }
-  public void insertAfter(String after , String data) {
+  public void insertAfter(T after , T data) {
     try {
       if (head == null) {
         System.out.println("list Not found , Use append method ");
       }
       else {
         boolean flag = false;
-        Node afterNode ;
-        Node current;
+        Node<T> afterNode ;
+        Node<T> current;
         current = head.getNext();
         afterNode = head;
         while (afterNode.getNext() != null) {
-          if(afterNode.toString() == after)
+          if(afterNode.toString() == after.toString())
           {
             Node node = new Node(data);
             afterNode.setNext(node);
@@ -100,9 +100,9 @@ public class LinkedList<flag> {
           }
 
         }
-        if(afterNode.toString() == after)
+        if(afterNode.toString() == after.toString())
         {
-          Node node = new Node(data);
+          Node<T> node = new Node<>(data);
           afterNode.setNext(node);
           flag = true;
           size ++;
@@ -128,7 +128,7 @@ public class LinkedList<flag> {
         return  "Index out of Bound";
       }
         else {
-        Node current;
+        Node<T> current;
         if (size -1 < kth) {
           return "Index out of bound";
         } else {
@@ -146,8 +146,8 @@ public class LinkedList<flag> {
     }
   }
 
-  public String remove(int index) throws IndexOutOfBoundsException {
-    String deletedNode = "";
+  public T remove(int index) throws IndexOutOfBoundsException {
+    T deletedNode = null;
     if (head == null) {
       System.out.println("List is empty");
     } else {
@@ -165,8 +165,8 @@ public class LinkedList<flag> {
 
       int counter = 0;
 
-      Node previous = null;
-      Node current = head;
+      Node<T> previous = null;
+      Node<T> current = head;
 
       while (counter != index) {
         previous = current;
@@ -186,8 +186,8 @@ public class LinkedList<flag> {
   // ***********************************************************
   // ***********************************************************
 
-  public void insert(String data) {
-    Node node = new Node(data);
+  public void insert(T data) {
+    Node<T> node = new Node<>(data);
     if (head == null) {
       head = node;
     } else {
@@ -260,23 +260,23 @@ public class LinkedList<flag> {
       System.out.println(list.toString());
     }
   }
-  public boolean include(String data) {
+  public boolean include(T data) {
     boolean flag = false;
-    Node current;
+    Node<T> current;
     current = head;
     while (current != null) {
-      if (current.toString() == data ) {
+      if (current.toString() == data.toString() ) {
         flag = true;
-      System.out.println("List has" + " " +data);
+      System.out.println("List has" + " " +data.toString());
 
       }
 
       current = current.getNext();
     }
-    if(flag == false)  System.out.println("List doesn't have" + " " + data);
+    if(flag == false)  System.out.println("List doesn't have" + " " + data.toString());
     return flag;
   }
-  public  static LinkedList<String> zipLists(LinkedList<String> list1, LinkedList<String> list2)
+  public  static LinkedList zipLists(LinkedList list1, LinkedList list2)
   {
     try {
       if(list1.head == null && list2.head == null)

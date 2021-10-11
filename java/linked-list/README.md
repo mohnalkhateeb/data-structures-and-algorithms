@@ -169,6 +169,31 @@ we need to create class clalled pseudo queue this class work as queue but using 
 - Big O enqueue : time --> O(1) space --> O(1)
 - Big O dequeue : time --> O(n) space --> O(n)
 
+## `Challenge-12` stack-queue-pseudo
+# Challenge Summary
+we need to create class clalled AnimalShelter which holds only dogs and cats.
+The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+- enque : function with value prameter of type Animal Inserts value into the PseudoQueue, using a first-in, first-out approach
+- dequeue :Extracts a value from the PseudoQueue, using a first-in, first-out approach.h and return data if are of cat or dog , if value is not "dog" or "cat" then return null.
+## Whiteboard Process
+![stack-queue-pseudo](resources/AnimalShetter.png)
+
+## Approach & Efficiency
+
+1 - create class called Animal with name and type variables
+2- creat cat and Dog classes extended from animal class
+3- let type of Cat = Cat and type of Dog = Dog
+4 - create  class clalled AnimalShelter with queue of Animales vareaible
+5- to enque to Animal shelter just enque new animal in AnimalShelter Queue
+6 - to deque
+6.1 - if AnimalShelter is empty return null
+6.2 - if type of dequeue from AnimalShelter is Cat or Dog then return AnimalShelter.dequeue
+6.3 - else return null
+
+- Big O enqueue : time --> O(1) space --> O(1)
+- Big O dequeue : time --> O(n) space --> O(n)
+
 
 
 

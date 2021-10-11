@@ -1,12 +1,12 @@
 package data.structure;
 
-public class PseudoQueue {
-  private Stack inbox = new Stack();
-  private Stack outbox = new Stack();
-  public void enqueue(String S) {inbox.push(S);}
-  public String dequeue() {
-    String pop = "";
-    if(inbox.isEmpty()){pop = "PseudoQueue is Empty";}
+public class PseudoQueue<T> {
+  private Stack<T>inbox = new Stack();
+  private Stack<T> outbox = new Stack();
+  public void enqueue(T S) {inbox.push(S);}
+  public T dequeue() {
+    T pop = null;
+    if(inbox.isEmpty()){return (T) "PseudoQueue is Empty";}
     else {
       try {
         if (outbox.isEmpty()) {

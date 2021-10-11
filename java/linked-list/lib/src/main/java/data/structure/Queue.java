@@ -1,38 +1,38 @@
 package data.structure;
 
-public class Queue {
-  private Node front;
-  private Node rear;
+public class Queue<T> {
+  private Node<T> front;
+  private Node<T> rear;
   private int size;
   public Queue() {
   }
 
-  public void enqueue(String data) {
+  public void enqueue(T data) {
     if (isEmpty()) {
-      Node node = new Node(data);
+      Node<T> node = new Node(data);
       front = node;
       rear = node;
     } else {
-      Node node = new Node(data);
+      Node<T> node = new Node(data);
       rear.setNext(node);
       rear = node;
     }
     size++;
   }
 
-  public String dequeue() {
+  public T dequeue() {
     try {
       if (isEmpty()) {
-        return "Queue is empty";
+        return null;
       } else {
-        String data = front.getData();
+        T data = front.getData();
         front = front.getNext();
         size--;
         return data;
       }
     }catch (Exception e)
     {
-      return e.getMessage();
+      return (T) e;
     }
 
   }
@@ -42,7 +42,7 @@ public class Queue {
       if (isEmpty()) {
         return "Queue is empty";
       } else {
-        return front.getData();
+        return front.getData().toString();
       }
     }catch (Exception e)
     {

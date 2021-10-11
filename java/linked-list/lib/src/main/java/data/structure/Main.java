@@ -3,9 +3,10 @@ package data.structure;
 public class Main {
   public static void main(String[] args) {
 //    linkedListCall();
-//      stackCall();
-//      queueCall();
-    pusdoQueueCall();
+//    stackCall();
+//    queueCall();
+//    pusdoQueueCall();
+    animalCall();
   }
   private static void linkedListCall()
   {
@@ -132,5 +133,25 @@ public class Main {
     System.out.println(pseudoQueue.dequeue());
 
 
+  }
+  private static void animalCall()
+  {
+    System.out.println(AnimalShelter.getAnimalQueue());
+    System.out.println(AnimalShelter.dequeue());
+    Animal cat = new Cat("foo");
+    Animal dog = new Dog("doo");
+    Animal animal = new Animal("an");
+    AnimalShelter.enqueue(cat);
+    AnimalShelter.enqueue(dog);
+    AnimalShelter.enqueue(animal);
+    System.out.println(AnimalShelter.getAnimalQueue().toString());
+    System.out.println(AnimalShelter.dequeue().getName());
+    System.out.println(AnimalShelter.dequeue().getName());
+    try {
+      System.out.println(AnimalShelter.dequeue().getName());
+    }catch (Exception exception)
+    {
+      System.out.println(exception.getMessage());
+    }
   }
 }

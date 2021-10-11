@@ -1,36 +1,36 @@
 package data.structure;
 
-public class Stack {
-  private Node top;
+public class Stack<T> {
+  private Node<T> top;
   private int size;
   public Stack() {
   }
 
-  public void push(String data) {
+  public void push(T data) {
     if (isEmpty()) {
-      Node node = new Node(data);
+      Node<T> node = new Node(data);
       top = node;
     } else {
-      Node node = new Node(data);
+      Node<T> node = new Node(data);
       node.setNext(top);
       top = node;
     }
     size++;
   }
 
-  public String pop() {
+  public T pop() {
 
       if (isEmpty()) {
-        return "The stack is empty";
+        return null;
       } else {
         try{
-        String data = top.getData();
+        T data = top.getData();
         top = top.getNext();
         size--;
         return data;
       }catch (Exception e)
         {
-          return e.getMessage();
+          return (T) e;
         }}
   }
 
@@ -39,7 +39,7 @@ public class Stack {
       if (isEmpty()) {
         return "The stack is empty";
       } else {
-        return top.getData();
+        return top.getData().toString();
       }
     }catch (Exception e)
     {
