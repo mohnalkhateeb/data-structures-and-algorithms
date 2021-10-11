@@ -1,32 +1,32 @@
 package data.structure;
 
-public class Node {
-  private String data;
-  private Node next;
+public class Node<T> {
+  private T data;
+  private Node<T> next;
 
-  public Node(String data) {
+  public Node(T data) {
     this.data = data;
   }
 
-  public String getData() {
+  public T getData() {
     return data;
   }
 
-  public void setData(String data) {
+  public void setData(T data) {
     this.data = data;
   }
 
-  public Node getNext() {
+  public Node<T> getNext() {
     return next;
   }
 
-  public void setNext(Node next) {
+  public void setNext(Node<T> next) {
     this.next = next;
   }
 
   @Override
   public String toString() {
-    String dataPrinted = data ;
+    String dataPrinted = (String) data;
     return dataPrinted;
   }
 }
