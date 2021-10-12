@@ -194,7 +194,7 @@ Implement the following methods:
 - Big O enqueue : time --> O(1) space --> O(1)
 - Big O dequeue : time --> O(n) space --> O(n)
 
-## `Challenge-12` stack-queue-pseudo
+## `Challenge-12` stack-queue-prackets 
 # Challenge Summary
 we need to create function called validate brackets with string prameters
 and  boolean Return value using stack and queue data structur
