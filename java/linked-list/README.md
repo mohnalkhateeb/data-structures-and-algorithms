@@ -194,6 +194,32 @@ Implement the following methods:
 - Big O enqueue : time --> O(1) space --> O(1)
 - Big O dequeue : time --> O(n) space --> O(n)
 
+## `Challenge-12` stack-queue-pseudo
+# Challenge Summary
+we need to create function called validate brackets with string prameters
+and  boolean Return value using stack and queue data structur
+## Whiteboard Process
+![stack-queue-pseudo](resources/stack-queue-brackets.png)
+
+## Approach & Efficiency
+1 - create function with string prametrers and boolean return
+2- create stack and queue objects
+3- defined two counters on for open brackets and second for closed
+4 - check if empty string return false
+5- else create string array sArr using split the string
+6 - loop about sArr and inside loop
+6.1 check if (sArr[i].equals("{")) or( sArr[i].equals("[") or sArr[i].equals("(") ) then push sArr[i] in stack and increse openPrackes counters
+6.2check if (sArr[i].equals("}")) or( sArr[i].equals("]") or sArr[i].equals(")")  then push sArr[i] in stack and increse closedPrackes counters
+7- check if counClose != countOpen return false
+8- else looping while stack is not empty and enqueue stack.pop() in side queue
+9- inside loop check if (queue.peek().equals("]")  && (stack.peek().equals("(")  or stack.peek().equals("{") )) or
+(queue.peek().equals(")")  && (stack.peek().equals("[")  or stack.peek().equals("{") ))or
+(queue.peek().equals("}")  && (stack.peek().equals("(")  or stack.peek().equals("[") )))
+then return false
+10 - else dequeue fron queue
+- Big O  : time --> best O(1) worst O(n)
+- Big O : space --> O(1)
+
 
 
 

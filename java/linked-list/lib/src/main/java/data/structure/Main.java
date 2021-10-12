@@ -6,7 +6,10 @@ public class Main {
 //    stackCall();
 //    queueCall();
 //    pusdoQueueCall();
-    animalCall();
+//    animalCall();
+    String s1 = "{(})";
+    boolean f = StackQueueBrackets.stackQueueBrackets(s1);
+    System.out.println(f);
   }
   private static void linkedListCall()
   {
@@ -154,4 +157,6 @@ public class Main {
       System.out.println(exception.getMessage());
     }
   }
+
 }
+
