@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="data.structure.StackQueueBracketsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-12T18:18:23" hostname="LTUCSTUDENT-L08" time="0.032">
+  <properties/>
+  <testcase name="testStackQueueBrackets()" classname="data.structure.StackQueueBracketsTest" time="0.032"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
