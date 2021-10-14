@@ -100,7 +100,6 @@ public class Main {
     stackInt.push(8);
     stackInt.push(13);
     stackInt.push(11);
-    System.out.println(stackInt.getMax());
 
   }
   private static void queueCall()
