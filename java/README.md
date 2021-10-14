@@ -3,9 +3,10 @@
 ## Language: `Java`
 
 * ### Arrays
-    - [Array-reverse](array-reverse/README.md)
-    - [Array-Binary-Search](array-insert-shift/README.md)
-    - [Array-Insert-Shift](array-insert-shift/README.md)
-* ### Linked List 
+    - [Array Reverse](array-reverse/README.md)
+    - [Array Binary Search](array-binary-search/README.md)
+    - [Array Insert Shift](array-insert-shift/README.md)
 
+* ### Linked List
+* [Data Structure Documentation ](./linked-list/README.md)
 

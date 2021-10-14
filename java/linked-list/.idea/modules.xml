@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/java.linked-list.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/java.linked-list.lib.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/linked-list.iml" filepath="$PROJECT_DIR$/.idea/modules/linked-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/linked-list.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/linked-list.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/linked-list.lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/linked-list.lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/linked-list.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/linked-list.lib.test.iml" />
+    </modules>
+  </component>
+</project>
