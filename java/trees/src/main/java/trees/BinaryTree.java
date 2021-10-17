@@ -68,5 +68,22 @@ public class BinaryTree <T extends Comparable<T>> extends BinarySearchTree{
   return postOrderTrav;
   }
 
+  public Number maxValue(BinaryNode<T> root) {
+    try {
+      if (root.getData() == null)
+      {
+        System.out.println("tree is empty");
+        return 0;
+      }
+      if (root.getRightNode() != null) {
+        return maxValue(root.getRightNode());
+      }
+      return (Number) root.getData();
+    }catch (Exception e)
+    {
+      System.out.println(e.getMessage()+e.hashCode());
+      return 0;
+    }
+  }
 
 }
