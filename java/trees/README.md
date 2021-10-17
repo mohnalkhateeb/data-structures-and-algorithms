@@ -21,4 +21,4 @@ A binary tree is a tree-type non-linear data structure with a maximum of two chi
         - ###### in order
          left-root-right
         - ###### post order
-         left-right-root 
+         left-right-root
