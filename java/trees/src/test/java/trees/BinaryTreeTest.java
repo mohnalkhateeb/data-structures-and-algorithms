@@ -39,5 +39,34 @@ public class BinaryTreeTest {
     assertEquals("10", tree.getRoot().getLeftNode().toString());
     assertEquals("25", tree.getRoot().getRightNode().toString());
   }
+  @Test
+  public void numberMaxValueTest() throws Exception
+  {
+    BinaryTree<Double> tree = new BinaryTree();
+    tree.add(15.5);
+    tree.add(10.0);
+    tree.add(25.0);
+    tree.add(80.88);
+    tree.add(50.0);
+    assertEquals(80.88, tree.maxValue(tree.getRoot()));
+
+  }
+
+  @Test
+  public void emptyOrNotNumberTreeMaxValueTest() throws Exception
+  {
+    BinaryTree<Double> tree2 = new BinaryTree();
+    tree.add("M");
+    tree.add("O");
+    tree.add("H");
+    tree.add("A");
+    tree.add("M");
+    tree.add("M");
+    tree.add("A");
+    tree.add("D");
+    assertEquals(0, tree2.maxValue(tree.getRoot()),"tree is empty");
+    assertEquals(0, tree.maxValue(tree.getRoot()),"tree is empty");
+
+  }
 
 }

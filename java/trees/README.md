@@ -22,3 +22,18 @@ A binary tree is a tree-type non-linear data structure with a maximum of two chi
          left-root-right
         - ###### post order
          left-right-root
+## `Challenge-16` Max-Tree
+# Challenge Summary
+ function Find the maximum value stored in the tree. with assuming that the values stored in the Binary Tree will be numeric.
+## Whiteboard Process
+![tree-max](resources/tree-max.png)
+
+## Approach & Efficiency
+- 1 - create method return number with binryNode is root of binary tree
+- 2- check if root is empty then return 0 and print massegr tree is empty
+- 3- check if right of root is not null called the function as recurcive with right of root as new root
+- 4- when the right of root become null then return the data of root
+- 5- if type of data is not numeric then return 0 and throw Expetion
+- `Big O`
+  time -> best `O(1)`->worst `O(n/2)` -> avarege `O(logn)` space -> `O(1)`
+

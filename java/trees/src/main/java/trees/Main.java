@@ -5,7 +5,7 @@ public class Main {
     BinaryTree<Integer> binarySearchTree = new BinaryTree<>();
     binarySearchTree.add(50);
     binarySearchTree.add(10);
-    binarySearchTree.add(60);
+    binarySearchTree.add(100);
     binarySearchTree.add(5);
     binarySearchTree.add(20);
     binarySearchTree.add(55);
@@ -39,6 +39,8 @@ public class Main {
     System.out.println(binarySearchTree.contains(100));
     System.out.println(binarySearchTree.contains(5));
     System.out.println(binarySearchTree.contains(18));
+    System.out.println(binarySearchTree.maxValue(binarySearchTree.getRoot()));
+    System.out.println(binarySearchTree.maxValue(mohammad.getRoot()));
 
   }
 }
