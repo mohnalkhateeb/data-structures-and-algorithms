@@ -68,5 +68,21 @@ public class BinaryTreeTest {
     assertEquals(0, tree.maxValue(tree.getRoot()),"tree is empty");
 
   }
+  @Test
+  public void breadthFirstOrderTreeTest()
+  {
+    BinaryTree<Double> tree2 = new BinaryTree();
+    tree.add(50);
+    tree.add(10);
+    tree.add(100);
+    tree.add(5);
+    tree.add(20);
+    tree.add(55);
+//    tree.add(70);
+//    tree.add("D");
+    assertEquals("50->10->100->5->20->55->", tree.breadthFirst());
+
+
+  }
 
 }

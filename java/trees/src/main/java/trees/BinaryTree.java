@@ -4,6 +4,9 @@ public class BinaryTree <T extends Comparable<T>> extends BinarySearchTree{
   private String inOrderTrav = "";
   private String preOrderTrav = "";
   private String postOrderTrav = "";
+  private String levelOrderTrav = "";
+  private  int hightLeft = 0;
+  private  int hightRight = 0;
   public String  inorderTraversal() {
     if (isEmpty()) {
       return "Tree is Empty";
@@ -67,7 +70,50 @@ public class BinaryTree <T extends Comparable<T>> extends BinarySearchTree{
     postOrderTrav += root.getData() + " -> ";
   return postOrderTrav;
   }
+  public  int treeHight(BinaryNode<T> root)
+  {
+    if(root.getLeftNode() != null)
+    {
+      hightLeft++;
+      treeHight(root.getLeftNode());
+    }
+    if(root.getRightNode() != null)
+    {
+      hightRight++;
+      treeHight(root.getRightNode());
+    }
+    return Math.max(hightLeft,hightRight);
+  }
+  public int treeHight()
+  {
+    if (isEmpty()) {
+      return 0;
+    }
+    else  return treeHight(getRoot());
+  }
+  public String breadthFirst(){
+    int height = treeHight();
+    for(int i = 0; i < height; i++){
+     levelOrderTrav += breadthFirstTraversal(getRoot(), i);
+    }
+    return levelOrderTrav;
+  }
 
+  // Method for breadth first search
+  public String breadthFirstTraversal(BinaryNode<T> root, int level){
+    String levelTrav = "";
+    if(root == null){
+      return levelTrav;
+    }
+    if(level == 0){
+      levelTrav = root.getData().toString() + "->";
+    }else{
+      levelTrav = breadthFirstTraversal(root.getLeftNode(), level-1)+breadthFirstTraversal(root.getRightNode(), level-1);
+//      if(root.getLeftNode() != null){return ;};
+//      if(root.getRightNode() != null){return };
+    }
+    return levelTrav;
+  }
   public Number maxValue(BinaryNode<T> root) {
     try {
       if (root.getData() == null)

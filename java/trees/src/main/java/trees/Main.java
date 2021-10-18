@@ -40,7 +40,11 @@ public class Main {
     System.out.println(binarySearchTree.contains(5));
     System.out.println(binarySearchTree.contains(18));
     System.out.println(binarySearchTree.maxValue(binarySearchTree.getRoot()));
-    System.out.println(binarySearchTree.maxValue(mohammad.getRoot()));
+//    System.out.println(binarySearchTree.maxValue(mohammad.getRoot()));
+    System.out.println(mohammad.treeHight());
+    System.out.println(binarySearchTree.treeHight());
+    System.out.println(mohammad.breadthFirst());
+    System.out.println(binarySearchTree.breadthFirst());
 
   }
 }
