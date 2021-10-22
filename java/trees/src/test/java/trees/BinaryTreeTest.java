@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BinaryTreeTest {
-  BinaryTree<String> tree = new BinaryTree();
+  BinarySearchTree<String> tree = new BinarySearchTree();
   @Test
   public void inOrderPreOrderPostOrderTraversalNonEmptyTest() {
 
@@ -42,7 +42,7 @@ public class BinaryTreeTest {
   @Test
   public void numberMaxValueTest() throws Exception
   {
-    BinaryTree<Double> tree = new BinaryTree();
+    BinarySearchTree<Double> tree = new BinarySearchTree();
     tree.add(15.5);
     tree.add(10.0);
     tree.add(25.0);
@@ -71,16 +71,16 @@ public class BinaryTreeTest {
   @Test
   public void breadthFirstOrderTreeTest()
   {
-    BinaryTree<Double> tree2 = new BinaryTree();
+    BinarySearchTree<Integer> tree = new BinarySearchTree<>();
     tree.add(50);
     tree.add(10);
     tree.add(100);
     tree.add(5);
     tree.add(20);
     tree.add(55);
-//    tree.add(70);
+    tree.add(70);
 //    tree.add("D");
-    assertEquals("50->10->100->5->20->55->", tree.breadthFirst());
+    assertEquals("50->10->100->5->20->55->70->", tree.breadthFirst());
 
 
   }

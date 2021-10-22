@@ -1,12 +1,25 @@
 package trees;
 
-public class BinaryTree <T extends Comparable<T>> extends BinarySearchTree{
+public class BinaryTree <T extends Comparable<T>> {
   private String inOrderTrav = "";
   private String preOrderTrav = "";
   private String postOrderTrav = "";
   private String levelOrderTrav = "";
   private  int hightLeft = 0;
   private  int hightRight = 0;
+
+  private BinaryNode<T> root;
+
+  public BinaryNode<T> getRoot() {
+    return root;
+  }
+
+  public boolean isEmpty() {
+    return root == null;
+  }
+  public void setRoot(BinaryNode<T> root) {
+    this.root = root;
+  }
   public String  inorderTraversal() {
     if (isEmpty()) {
       return "Tree is Empty";
@@ -93,7 +106,7 @@ public class BinaryTree <T extends Comparable<T>> extends BinarySearchTree{
   }
   public String breadthFirst(){
     int height = treeHight();
-    for(int i = 0; i < height; i++){
+    for(int i = 0; i <= height; i++){
      levelOrderTrav += breadthFirstTraversal(getRoot(), i);
     }
     return levelOrderTrav;

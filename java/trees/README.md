@@ -37,3 +37,21 @@ A binary tree is a tree-type non-linear data structure with a maximum of two chi
 - `Big O`
   time -> best `O(1)`->worst `O(n/2)` -> avarege `O(logn)` space -> `O(1)`
 
+## `Challenge-17` tree-breadth-first
+# Challenge Summary
+we need to Write a function called breadth first take Arguments as tree
+and return list of all values in the tree, in the order they were encountered
+## Whiteboard Process
+![tree-breadth-first](resources/tree-breadth-first.png)
+
+## Approach & Efficiency
+- 1 - create function return integer to calculate highte of tree
+- 2- create two variables hight left and hight right with intial value 0
+- 3- chek if left node is exist incress hight left then recursive hight function with root is left node
+- 4- chek if right node is exist incress hight right then recursive hight function with root is right node
+- 5- let hight is max between hight left and hight right
+- 6- create function breadth first with prameter binary tree node and return list
+- 7- first function with root node and loop form o to tree hight and recuseive function with left and right nodes
+- `Big O`
+  time -> `O(n)` , space -> `O(1)`
+
