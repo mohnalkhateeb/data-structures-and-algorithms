@@ -1,24 +1,18 @@
 package trees;
 
-public class BinarySearchTree <T extends Comparable<T>> {
+public class BinarySearchTree <T extends Comparable<T>> extends BinaryTree{
 
 
 
-  private BinaryNode<T> root;
 
-  public BinaryNode<T> getRoot() {
-    return root;
-  }
 
-  public void setRoot(BinaryNode<T> root) {
-    this.root = root;
-  }
+
 
   public void add(T data) {
     if (isEmpty()) { // tree empty
-      root = new BinaryNode<>(data);
+      this.setRoot(new BinaryNode<>(data))  ;
     } else {
-      addHelper(data, root);
+      addHelper(data, this.getRoot());
     }
   }
 
@@ -40,7 +34,7 @@ public class BinarySearchTree <T extends Comparable<T>> {
   }
   public boolean contains(T item)
   {
-    BinaryNode<T> node = root;
+    BinaryNode<T> node = this.getRoot();
     return containsHelp(node , item);
   }
 
@@ -74,9 +68,7 @@ public class BinarySearchTree <T extends Comparable<T>> {
     }
   }
 
-  public boolean isEmpty() {
-    return root == null;
-  }
+
 
 
 }

@@ -2,7 +2,7 @@ package trees;
 
 public class Main {
   public static void main(String[] args) {
-    BinaryTree<Integer> binarySearchTree = new BinaryTree<>();
+    BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
     binarySearchTree.add(50);
     binarySearchTree.add(10);
     binarySearchTree.add(100);
@@ -11,7 +11,7 @@ public class Main {
     binarySearchTree.add(55);
     binarySearchTree.add(70);
 
-    BinaryTree<String> mohammad = new BinaryTree<>();
+    BinarySearchTree<String> mohammad = new BinarySearchTree<>();
     mohammad.add("M");
     mohammad.add("O");
     mohammad.add("H");
@@ -40,7 +40,21 @@ public class Main {
     System.out.println(binarySearchTree.contains(5));
     System.out.println(binarySearchTree.contains(18));
     System.out.println(binarySearchTree.maxValue(binarySearchTree.getRoot()));
-    System.out.println(binarySearchTree.maxValue(mohammad.getRoot()));
+//    System.out.println(binarySearchTree.maxValue(mohammad.getRoot()));
+    System.out.println(mohammad.treeHight());
+    System.out.println(binarySearchTree.treeHight());
+    System.out.println(mohammad.breadthFirst());
+    System.out.println(binarySearchTree.breadthFirst());
+
+    BinaryTree<String> binaryTree = new BinaryTree<>();
+      binaryTree.setRoot(new BinaryNode("J"));
+      binaryTree.getRoot().setLeftNode(new BinaryNode("A"));
+      binaryTree.getRoot().setRightNode(new BinaryNode("S"));
+      binaryTree.getRoot().getLeftNode().setLeftNode(new BinaryNode("O"));
+      binaryTree.getRoot().getLeftNode().setRightNode(new BinaryNode("N"));
+
+    System.out.println(binaryTree.breadthFirst());
+
 
   }
 }
