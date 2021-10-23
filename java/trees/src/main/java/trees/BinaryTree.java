@@ -144,5 +144,31 @@ public class BinaryTree <T extends Comparable<T>> {
       return 0;
     }
   }
+  public static BinaryTree<String> treeFizzBuzz(BinaryTree binaryTree){
+
+    return fizzBuzzTreeHelper(binaryTree,binaryTree.getRoot());
+  }
+
+  private static BinaryTree<String> fizzBuzzTreeHelper(BinaryTree root, BinaryNode node){
+    if(node == null) return root;
+
+    BinaryTree root0 = new BinaryTree();
+    root0.setRoot(root.getRoot());
+    if(((Integer) node.getData() % 15) == 0) root.getRoot().setData("FizzBuzz");
+    else if(((Integer) node.getData()) % 3 == 0) root.getRoot().setData("Fizz");
+    else if(((Integer) node.getData()) % 5 == 0) root.getRoot().setData("Buzz");
+    else root.getRoot().setData(node.getData().toString());
+    BinaryTree root1 = new BinaryTree();
+    root1.setRoot(root.getRoot().getLeftNode());
+    BinaryTree root2 = new BinaryTree();
+    root2.setRoot(root.getRoot().getRightNode());
+
+    fizzBuzzTreeHelper(root1, node.getLeftNode());
+
+    fizzBuzzTreeHelper(root2, node.getRightNode());
+
+    return root0;
+  }
+
 
 }

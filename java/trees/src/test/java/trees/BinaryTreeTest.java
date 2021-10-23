@@ -84,5 +84,23 @@ public class BinaryTreeTest {
 
 
   }
+  @Test
+  public void treeFizzBuzzTest()
+  {
+    BinarySearchTree<Integer> tree = new BinarySearchTree<>();
+    tree.add(50);
+    tree.add(10);
+    tree.add(100);
+    tree.add(5);
+    tree.add(20);
+    tree.add(11);
+    tree.add(55);
+    tree.add(70);
+    tree.add(18);
+    tree.add(90);
+    assertEquals("Buzz->Buzz->Buzz->Buzz->Buzz->Buzz->11->Buzz->Fizz->FizzBuzz->", BinaryTree.treeFizzBuzz(tree).breadthFirst());
+
+
+  }
 
 }

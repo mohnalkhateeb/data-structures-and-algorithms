@@ -8,8 +8,11 @@ public class Main {
     binarySearchTree.add(100);
     binarySearchTree.add(5);
     binarySearchTree.add(20);
+    binarySearchTree.add(11);
     binarySearchTree.add(55);
     binarySearchTree.add(70);
+    binarySearchTree.add(18);
+    binarySearchTree.add(90);
 
     BinarySearchTree<String> mohammad = new BinarySearchTree<>();
     mohammad.add("M");
@@ -54,6 +57,9 @@ public class Main {
       binaryTree.getRoot().getLeftNode().setRightNode(new BinaryNode("N"));
 
     System.out.println(binaryTree.breadthFirst());
+    System.out.println("\n");
+
+    System.out.println(BinaryTree.treeFizzBuzz(binarySearchTree).breadthFirst());
 
 
   }
