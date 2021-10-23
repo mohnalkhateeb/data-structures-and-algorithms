@@ -55,3 +55,23 @@ and return list of all values in the tree, in the order they were encountered
 - `Big O`
   time -> `O(n)` , space -> `O(1)`
 
+## `Challenge-18` tree-fizz-buzz
+# Challenge Summary
+we need to Write a function called fizz buzz tree take the Arguments like  k-ary tree and return new k-ary tree
+Determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as “Fizz” , “Buzz”  “FizzBuzz” or number into a String
+## Whiteboard Process
+![tree-fizz-buzz](resources/tree-fizz-buzz.png)
+
+## Approach & Efficiency
+* 1 - create function   called fizz buzz tree take the Arguments like  k-ary tree and return new k-ary tree
+* 2- check value of root
+  - if If the value is divisible by 3, replace the value with “Fizz”
+  - If the value is divisible by 5, replace the value with “Buzz”
+  - If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+  - If the value is not divisible by 3 or 5, simply turn the number into a String.
+* 3- identify two bainary trees
+  - first one (tree1) with root the left of original tree
+  - second (tree2) with root the right of original tree
+    recircive fizzbuzz function with tree1 then with tree2- `Big O`
+    time -> `O(n)` , space -> `O(1)`
+
