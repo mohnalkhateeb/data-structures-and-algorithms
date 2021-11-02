@@ -9,4 +9,6 @@
 
 * ### Linked List
 * [Data Structure Documentation ](./linked-list/README.md)
+* ### Trees
+* [Trees Documentation ](./trees/README.md)
 
