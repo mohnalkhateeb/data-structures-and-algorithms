@@ -11,4 +11,7 @@
 * [Data Structure Documentation ](./linked-list/README.md)
 * ### Trees
 * [Trees Documentation ](./trees/README.md)
+* ### Sort
+* [Insertion Sort](insertion-sort/README.md)
+* [Merge Sort](merge-sort/README.md)
 

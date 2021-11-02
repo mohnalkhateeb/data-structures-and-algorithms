@@ -3,8 +3,53 @@
  */
 package insertion.sort;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Library {
-    public boolean someLibraryMethod() {
-        return true;
+  public static void main(String[] args) {
+    int[] arr = new int[]{8,4,23,42,16,15};
+    System.out.println(Arrays.toString(arr));
+    System.out.println(Arrays.toString(insertionSort(arr)));
+    int[] arr1 = new int[]{};
+//    System.out.println(Arrays.toString(arr));
+    System.out.println(Arrays.toString(insertionSort(arr1)));
+    arr1 = new int[]{4};
+    System.out.println(Arrays.toString(insertionSort(arr1)));
+
+
+
+
+  }
+
+  public static int[] insertionSort(int arr[])
+  {
+    try{
+      int i, key, j;
+      if(arr == null)
+      {
+        return arr;
+      }
+      else if(arr.length == 1)
+      {
+        return arr;
+      }
+      for (i = 1; i < arr.length; i++)
+      {
+        key = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > key)
+        {
+          arr[j + 1] = arr[j];
+          j = j - 1;
+        }
+        arr[j + 1] = key;
+      }
+    }catch (Exception e)
+    {
+      arr = new int[]{e.hashCode()};
+      System.out.println(e.getMessage());
     }
+    return arr;
+  }
 }
