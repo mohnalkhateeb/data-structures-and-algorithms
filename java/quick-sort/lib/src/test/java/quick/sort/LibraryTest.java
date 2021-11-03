@@ -4,11 +4,40 @@
 package quick.sort;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
+import static quick.sort.Library.quickSort;
 
 class LibraryTest {
     @Test void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+//        Library classUnderTest = new Library();
+//        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
+  @Test
+  public void testQuickSortEmptyArr() {
+    int[] arr = new int[]{};
+    try {
+      quickSort(arr,0,arr.length-1);
+    }catch (Exception e)
+    {
+      arr = new int[]{e.hashCode()};
+    }
+    assertEquals(quickSort(arr,0,arr.length-1),arr);
+    assertEquals(Arrays.toString(quickSort(arr,0,arr.length-1)),Arrays.toString(arr));
+
+  }
+  @Test
+  public void testQuickSortNonEmptyArr() {
+    int[] arr = new int[]{14,18,2,9,71,54,60};
+    try {
+      quickSort(arr,0,arr.length-1);
+    }catch (Exception e)
+    {
+      arr = new int[]{e.hashCode()};
+    }
+    assertEquals(quickSort(arr,0,arr.length-1),arr);
+    assertEquals(Arrays.toString(quickSort(arr,0,arr.length-1)), "[2, 9, 14, 18, 54, 60, 71]");
+  }
 }
