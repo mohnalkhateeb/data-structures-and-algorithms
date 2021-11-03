@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9323030-5e45-4e11-a814-1f933d25a026" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BLOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/quick/sort/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/quick/sort/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/quick/sort/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/quick/sort/LibraryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="f9323030-5e45-4e11-a814-1f933d25a026" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
