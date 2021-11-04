@@ -15,4 +15,6 @@
 * [Insertion Sort](insertion-sort/README.md)
 * [Merge Sort](merge-sort/README.md)
 * [Quick Sort](quick-sort/README.md)
+* ### HashTable
+* [HashTable](./hashtable/README.md)
 
