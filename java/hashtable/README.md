@@ -20,9 +20,9 @@ Implement a Hashtable Class with the following methods:
   - Returns: Index in the collection for that key
 
 ## Approach & Efficiency
-| Page | Title |
-| -------- | ------ |
+
 | Algorithm	|	Average |	Worst case |
+| -------- | ------ | ------ |
 | Space |	O(n)[1]	| O(n) |
 | Search |	O(1) | O(n) |
 | Insert |	O(1)	|O(n) |
