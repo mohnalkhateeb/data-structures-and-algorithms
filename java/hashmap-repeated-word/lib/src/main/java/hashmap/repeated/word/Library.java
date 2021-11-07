@@ -17,28 +17,10 @@ public class Library {
 
 
   public static String repeatedWord(String word) {
-//    String token[] = word.split(" ");
-//    HashMap<String, Integer> setOfWords = new HashMap<String, Integer>();
-//    for (int i = 0; i < token.length; i++) {
-//      if (setOfWords.containsKey(token[i]))
-//        setOfWords.put(token[i], setOfWords.get(token[i]) + 1); // word exists
-//      else
-//        setOfWords.put(token[i], 1);
-//    }
-//    for (int i = 0; i < token.length; i++) {
-//      int count = setOfWords.get(token[i]);
-//      if (count > 1) {
-//        return token[i];
-//      }
-//    }
-//
-//    return "Repetition Is Not Exist";
-//  }
+
     String[] splitInput = word.split(" ");
     Set<String> uniqueWords = new HashSet<>();
     for(String inputWord : splitInput) {
-      // Help on Regex line from: https://stackoverflow.com/questions/8115679/how-do-i-remove-all-punctuation-that-follows-a-single-word-in-java/8115708
-      // Regex removes common trailing punctuation.
       if(!uniqueWords.add(inputWord.toLowerCase().replaceAll("([a-z]+)[?:!.,;']*", "$1"))) {
         return inputWord;
       }
