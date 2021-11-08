@@ -17,4 +17,6 @@
 * [Quick Sort](quick-sort/README.md)
 * ### HashTable
 * [HashTable](./hashtable/README.md)
+* ### hashmap-repeated-word
+* [hashmap-repeated-word](./hashmap-repeated-word/README.md)
 
