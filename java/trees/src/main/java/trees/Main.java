@@ -1,7 +1,9 @@
 package trees;
 
+
 public class Main {
   public static void main(String[] args) {
+
     BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
     binarySearchTree.add(50);
     binarySearchTree.add(10);
@@ -62,5 +64,8 @@ public class Main {
     System.out.println(BinaryTree.treeFizzBuzz(binarySearchTree).breadthFirst());
 
 
+
+
   }
+
 }
