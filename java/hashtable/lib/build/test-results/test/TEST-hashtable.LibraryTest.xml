@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hashtable.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-04T19:51:42" hostname="LTUCSTUDENT-L08" time="0.021">
+  <properties/>
+  <testcase name="testHashtableCollision()" classname="hashtable.LibraryTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
