@@ -27,3 +27,11 @@ Implement a Hashtable Class with the following methods:
 | Search |	O(1) | O(n) |
 | Insert |	O(1)	|O(n) |
 | Delete |	O(1)	| O(n) |
+
+# Challenge 32
+<!-- Description of the challenge -->
+
+## Whiteboard Process
+![tree-intersection](./lib/src/main/resources/tree-intersection.png)
+## Solution
+[tree-transaction](./lib/src/main/java/TreeIntersection/TreeIntersection.java)
