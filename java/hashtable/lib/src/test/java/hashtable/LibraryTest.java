@@ -3,6 +3,8 @@
  */
 package hashtable;
 
+import TreeIntersection.BinaryTree;
+import TreeIntersection.TreeIntersection;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -92,6 +94,45 @@ class LibraryTest {
     test.add("pod",1000);
 
     assertEquals( test.hash("dop"), test.hash("pod"));
+  }
+  @Test
+  public void testTreeTransActionNonEmptyTree(){
+    BinaryTree<String,Integer> binaryTreeOne = new BinaryTree<>(new HashNode<>("A",100,5));
+    HashNode<String,Integer> node1 = new HashNode<>("B",200,3);
+    HashNode<String,Integer> node2 = new HashNode<>("C",300,6);
+    HashNode<String,Integer> node3 = new HashNode<>("D",160, node1, node2,7);
+    HashNode<String,Integer> node5 = new HashNode<>("E",180,7);
+    HashNode<String,Integer> node4 = new HashNode<>("F",120, node5, null,5);
+    binaryTreeOne.root.rightChild = node4;
+    binaryTreeOne.root.leftChild = node3;
+
+    BinaryTree<String,Integer> binaryTreeTwo = new BinaryTree<>(new HashNode<>("G",45,5));
+    HashNode<String,Integer> node6 = new HashNode<>("H",200,3);
+    HashNode<String,Integer> node7 = new HashNode<>("I",150,3);
+    HashNode<String,Integer> node8 = new HashNode<>("J",160, node6, node7,3);
+    HashNode<String,Integer> node9 = new HashNode<>("K",120,3);
+    HashNode<String,Integer> node10 = new HashNode<>("L",80, node9, null,4);
+    binaryTreeTwo.root.rightChild = node10;
+    binaryTreeTwo.root.leftChild = node8;
+
+
+    assertEquals( TreeIntersection.treeIntersection(binaryTreeOne,binaryTreeTwo).toString(), "[160, 200, 120]");
+  }
+  @Test
+  public void testTreeTransActionEmptyTree(){
+    BinaryTree<String,Integer> binaryTreeOne = new BinaryTree<>(new HashNode<>("A",100,5));
+    HashNode<String,Integer> node1 = new HashNode<>("B",200,3);
+    HashNode<String,Integer> node2 = new HashNode<>("C",300,6);
+    HashNode<String,Integer> node3 = new HashNode<>("D",160, node1, node2,7);
+    HashNode<String,Integer> node5 = new HashNode<>("E",180,7);
+    HashNode<String,Integer> node4 = new HashNode<>("F",120, node5, null,5);
+    binaryTreeOne.root.rightChild = node4;
+    binaryTreeOne.root.leftChild = node3;
+
+    BinaryTree<String,Integer> binaryTreeTwo = new BinaryTree<>(new HashNode<>("G",45,5));
+
+
+    assertEquals( TreeIntersection.treeIntersection(binaryTreeOne,binaryTreeTwo).toString(), "[]");
   }
 //
 
