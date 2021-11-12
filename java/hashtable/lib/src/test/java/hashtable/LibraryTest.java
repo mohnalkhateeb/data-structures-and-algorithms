@@ -3,6 +3,7 @@
  */
 package hashtable;
 
+import LeftJoin.LeftJoin;
 import TreeIntersection.BinaryTree;
 import TreeIntersection.TreeIntersection;
 import org.junit.jupiter.api.Test;
@@ -134,6 +135,56 @@ class LibraryTest {
 
     assertEquals( TreeIntersection.treeIntersection(binaryTreeOne,binaryTreeTwo).toString(), "[]");
   }
-//
+  @Test
+  public void testLeftJoinNonEmptyTables(){
+    HashTable table1 = new HashTable();
+    table1.add("1th", " 1 ");
+    table1.add("2th", " 1 ");
+    table1.add("3th", " 1 ");
+    table1.add("4th", " 1 ");
+    table1.add("5th", " 1 ");
 
+    HashTable table2 = new HashTable();
+    table2.add("1th", " 2 ");
+    table2.add("3th", " 2 ");
+    table2.add("4th", " 2 ");
+    table2.add("6th", " 2 ");
+
+    assertEquals( LeftJoin.leftJoin(table1,table2).toString(), "[[2th,  1 , NULL], [3th,  1 ,  2 ], [4th,  1 ,  2 ], [5th,  1 , NULL], [1th,  1 ,  2 ]]");
+  }
+  @Test
+  public void testLeftJoinEmptyFirstTable(){
+    HashTable table1 = new HashTable();
+//    table1.add("1th", " 1 ");
+//    table1.add("2th", " 1 ");
+//    table1.add("3th", " 1 ");
+//    table1.add("4th", " 1 ");
+//    table1.add("5th", " 1 ");
+
+    HashTable table2 = new HashTable();
+    table2.add("1th", " 2 ");
+    table2.add("3th", " 2 ");
+    table2.add("4th", " 2 ");
+    table2.add("6th", " 2 ");
+
+    assertEquals( LeftJoin.leftJoin(table1,table2).toString(), "[]");
+  }
+  @Test
+  public void testLeftJoinEmptySecondTable(){
+    HashTable table1 = new HashTable();
+    table1.add("1th", " 1 ");
+    table1.add("2th", " 1 ");
+    table1.add("3th", " 1 ");
+    table1.add("4th", " 1 ");
+    table1.add("5th", " 1 ");
+
+    HashTable table2 = new HashTable();
+//    table2.add("1th", " 2 ");
+//    table2.add("3th", " 2 ");
+//    table2.add("4th", " 2 ");
+//    table2.add("6th", " 2 ");
+
+    assertEquals( LeftJoin.leftJoin(table1,table2).toString(), "[[2th,  1 , NULL], [3th,  1 , NULL], [4th,  1 , NULL], [5th,  1 , NULL], [1th,  1 , NULL]]");
+  }
+//
 }

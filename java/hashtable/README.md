@@ -35,3 +35,13 @@ Implement a Hashtable Class with the following methods:
 ![tree-intersection](./lib/src/main/resources/tree-intersection.png)
 ## Solution
 [tree-transaction](./lib/src/main/java/TreeIntersection/TreeIntersection.java)
+
+# Challenge 33
+We need to Write a function called left join take two hash maps as parameters
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values and return data structure that holds the results is up to you.
+
+## Whiteboard Process
+![tree-intersection](./lib/src/main/resources/hashmap-left-join.png)
+## Solution
+[tree-transaction](./lib/src/main/java/LeftJoin/leftJoin.java)

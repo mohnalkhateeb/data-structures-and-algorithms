@@ -4,9 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6987158a-32f7-4c9f-8e27-02c37f41b756" name="Changes" comment="">
+    <list default="true" id="b85117b0-16e8-4e33-8869-309b268cc10f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_30_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/java.hashtable.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/main/hashtable/HashNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/main/hashtable/HashNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/main/hashtable/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/main/hashtable/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/classes/java/test/hashtable/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/classes/java/test/hashtable/LibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/reports/tests/test/classes/hashtable.LibraryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/reports/tests/test/classes/hashtable.LibraryTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/reports/tests/test/packages/hashtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/reports/tests/test/packages/hashtable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/test-results/test/TEST-hashtable.LibraryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/test-results/test/TEST-hashtable.LibraryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/hashtable/LeftJoin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/hashtable/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/hashtable/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/hashtable/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/hashtable/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +60,6 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -53,7 +89,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="20SRCZYoBFy7tko0IQj4UsI63Vs" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/hashtable/HashTable.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/hashtable/Library.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/LeftJoin/LeftJoin.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/TreeIntersection/TreeIntersection.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="20mmlwFS5qkzhn4BJB5nMtoFTFJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -63,21 +105,20 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.LibraryTest.testLeftJoinEmptySecondTable">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="hashtable.Library" />
-      <module name="hashtable.lib.test" />
+      <module name="java.hashtable.lib.test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,12 +144,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.testHash2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.testLeftJoinEmptyFirstTable" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;hashtable.LibraryTest.testHash2&quot;" />
+        <option name="scriptParameters" value="--tests &quot;hashtable.LibraryTest.testLeftJoinEmptyFirstTable&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -124,12 +165,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.testHashTableAdd" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.testLeftJoinEmptySecondTable" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;hashtable.LibraryTest.testHashTableAdd&quot;" />
+        <option name="scriptParameters" value="--tests &quot;hashtable.LibraryTest.testLeftJoinEmptySecondTable&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -145,12 +186,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.testHashTableContains" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.testLeftJoinEmptyTree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;hashtable.LibraryTest.testHashTableContains&quot;" />
+        <option name="scriptParameters" value="--tests &quot;hashtable.LibraryTest.testLeftJoinEmptyTree&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -166,12 +207,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.testHashtableCollision" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.testTreeTransActionEmptyTree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;hashtable.LibraryTest.testHashtableCollision&quot;" />
+        <option name="scriptParameters" value="--tests &quot;hashtable.LibraryTest.testTreeTransActionEmptyTree&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -189,30 +230,30 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.LibraryTest.testHash2" />
-      <item itemvalue="Gradle.LibraryTest.testHashTableAdd" />
-      <item itemvalue="Gradle.LibraryTest.testHashTableContains" />
+      <item itemvalue="Gradle.LibraryTest.testTreeTransActionEmptyTree" />
       <item itemvalue="Gradle.LibraryTest" />
-      <item itemvalue="Gradle.LibraryTest.testHashtableCollision" />
+      <item itemvalue="Gradle.LibraryTest.testLeftJoinEmptyTree" />
+      <item itemvalue="Gradle.LibraryTest.testLeftJoinEmptyFirstTable" />
+      <item itemvalue="Gradle.LibraryTest.testLeftJoinEmptySecondTable" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LibraryTest.testHashtableCollision" />
+        <item itemvalue="Gradle.LibraryTest.testLeftJoinEmptySecondTable" />
+        <item itemvalue="Gradle.LibraryTest.testLeftJoinEmptyFirstTable" />
+        <item itemvalue="Gradle.LibraryTest.testLeftJoinEmptyTree" />
         <item itemvalue="Gradle.LibraryTest" />
-        <item itemvalue="Gradle.LibraryTest.testHashTableContains" />
-        <item itemvalue="Gradle.LibraryTest.testHashTableAdd" />
-        <item itemvalue="Gradle.LibraryTest.testHash2" />
+        <item itemvalue="Gradle.LibraryTest.testTreeTransActionEmptyTree" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6987158a-32f7-4c9f-8e27-02c37f41b756" name="Changes" comment="" />
-      <created>1636035878111</created>
+      <changelist id="b85117b0-16e8-4e33-8869-309b268cc10f" name="Changes" comment="" />
+      <created>1636658294557</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1636035878111</updated>
+      <updated>1636658294557</updated>
     </task>
     <servers />
   </component>
@@ -227,8 +268,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
