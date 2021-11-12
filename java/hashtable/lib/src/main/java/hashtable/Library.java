@@ -5,6 +5,7 @@ package hashtable;
 
 import TreeIntersection.BinaryTree;
 import TreeIntersection.TreeIntersection;
+import LeftJoin.LeftJoin;
 
 import java.util.ArrayList;
 
@@ -51,5 +52,20 @@ public class Library {
 
 //    TreeIntersection.treeIntersection(binaryTreeOne,binaryTreeTwo);
     System.out.println(TreeIntersection.treeIntersection(binaryTreeOne,binaryTreeTwo));
+
+    HashTable table1 = new HashTable();
+    table1.add("1th", " 1 ");
+    table1.add("2th", " 1 ");
+    table1.add("3th", " 1 ");
+    table1.add("4th", " 1 ");
+    table1.add("5th", " 1 ");
+
+    HashTable table2 = new HashTable();
+    table2.add("1th", " 2 ");
+    table2.add("3th", " 2 ");
+    table2.add("4th", " 2 ");
+    table2.add("6th", " 2 ");
+
+    System.out.println(LeftJoin.leftJoin(table1, table2));
   }
 }

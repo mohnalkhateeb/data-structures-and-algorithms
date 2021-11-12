@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hashtable.iml" filepath="$PROJECT_DIR$/.idea/modules/hashtable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/hashtable.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/hashtable.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/hashtable.lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/hashtable.lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/hashtable.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/hashtable.lib.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java.hashtable.iml" filepath="$PROJECT_DIR$/.idea/modules/java.hashtable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/java.hashtable.lib.test.iml" />
+    </modules>
+  </component>
+</project>
