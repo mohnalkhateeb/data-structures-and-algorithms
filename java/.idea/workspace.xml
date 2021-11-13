@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d8e6709-da2e-490f-88b8-666a08f08830" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/classes/java/main/hashtable/HashNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/classes/java/main/hashtable/HashNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/classes/java/main/hashtable/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/classes/java/main/hashtable/HashTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/classes/java/main/hashtable/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/classes/java/main/hashtable/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/classes/java/test/hashtable/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/classes/java/test/hashtable/LibraryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/reports/tests/test/classes/hashtable.LibraryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/reports/tests/test/classes/hashtable.LibraryTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/reports/tests/test/packages/hashtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/reports/tests/test/packages/hashtable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/test-results/test/TEST-hashtable.LibraryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/test-results/test/TEST-hashtable.LibraryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/src/main/java/hashtable/LeftJoin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashtable/lib/src/main/java/hashtable/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable/lib/src/main/java/hashtable/Library.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="20nNojApTLLqmBBsNiifZ9gYtb2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d8e6709-da2e-490f-88b8-666a08f08830" name="Changes" comment="" />
+      <created>1636676579143</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636676579143</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
