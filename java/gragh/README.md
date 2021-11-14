@@ -62,3 +62,15 @@ size
 
 Arguments: none
 Returns the total number of nodes in the graph
+
+# Challenge Summary
+we need to write breadth-first of graph this function take
+graph node as prameter and return collection of nodes in the order
+they were visited and Display the collection
+## Whiteboard Process
+![graphBreadth](./lib/src/main/resources/graph-bradth-first.png)
+
+## Approach & Efficiency
+time : O(n^2)
+scape : O(n)
+

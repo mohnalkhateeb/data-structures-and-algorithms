@@ -42,4 +42,27 @@ public class Graph<T> {
     if (nodeList.isEmpty()) return null;
     return "" + nodeList;
   }
+
+  public List<Node<T>> breadthFirst(T value) {
+    Node<T> node = new Node(value);
+    if (node.value == null) return null;
+    List<Node<T>> nodes = new ArrayList<>();
+    Queue<T> breadth = new Queue<T>();
+    Set<Node<T>> visited = new HashSet<>();
+
+    breadth.enqueue(node);
+    visited.add(node);
+
+    while (!breadth.isEmpty()) {
+      Node<T> front = breadth.dequeue();
+      nodes.add(front);
+      for (Node<T> neighbor : getNeighbors(front.value)) {
+        if (!visited.contains(neighbor)) {
+          visited.add(neighbor);
+          breadth.enqueue(neighbor);
+        }
+      }
+    }
+    return nodes;
+  }
 }

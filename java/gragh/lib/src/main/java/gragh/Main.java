@@ -21,5 +21,9 @@ public class Main {
     System.out.println(myGraph.getNeighbors("7"));
     System.out.println(myGraph.getNeighbors("5"));
     System.out.println(myGraph.size());
+
+    System.out.println(myGraph.breadthFirst("8"));
+    System.out.println(myGraph.breadthFirst("7"));
+    System.out.println(myGraph.breadthFirst("5"));
   }
 }
