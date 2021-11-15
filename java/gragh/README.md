@@ -63,7 +63,7 @@ size
 Arguments: none
 Returns the total number of nodes in the graph
 
-# Challenge Summary
+# Challenge Summary 36
 we need to write breadth-first of graph this function take
 graph node as prameter and return collection of nodes in the order
 they were visited and Display the collection
@@ -73,4 +73,14 @@ they were visited and Display the collection
 ## Approach & Efficiency
 time : O(n^2)
 scape : O(n)
+
+# Challenge Summary 37
+we need to  called business trip
+take graph, array of city names as prametars and return: cost or null
+## Whiteboard Process
+![graphBreadth](./lib/src/main/resources/graph-business-trip.png)
+
+## Approach & Efficiency
+time : O(n2)
+scape : O(1)
 
