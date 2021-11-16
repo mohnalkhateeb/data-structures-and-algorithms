@@ -84,3 +84,13 @@ take graph, array of city names as prametars and return: cost or null
 time : O(n2)
 scape : O(1)
 
+# Challenge Summary 38
+we need to write function called  Depth first for the Graph class. this function
+take Node (Starting point of search) as pramerters and return A collection of nodes in their pre-order depth-first traversal order and Display the collection
+## Whiteboard Process
+![graphBreadth](./lib/src/main/resources/graph-depth-first.png)
+
+## Approach & Efficiency
+time : O(n2)
+scape : O(n)
+
